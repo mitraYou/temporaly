@@ -10,7 +10,7 @@ class User extends DB {
   private String $theme;
   private int    $genders_id;
   
-  /* functions */
+  /* Methods */
 
   // get propaties
   public function get__id()         : int      { return $this->id; }
