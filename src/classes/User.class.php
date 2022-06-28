@@ -1,6 +1,6 @@
 <?php
 
-class DB {
+class User extends DB {
   
   /* Propaties */
   private int    $id;
@@ -11,8 +11,6 @@ class DB {
   private int    $genders_id;
   
   /* functions */
-  
-  public function 
 
   // get propaties
   public function get__id()         : int      { return $this->id; }
