@@ -1,6 +1,6 @@
 <?php
 
-class DBConnect {
+class PDO {
   
   /* Propaties */
   const DB[NAME] = 'cri_sortable';
