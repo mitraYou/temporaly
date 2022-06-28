@@ -27,3 +27,5 @@ class DB {
   public void set__password($password)     { $this->password   = $password; }
   public void set__theme($theme)           { $this->theme      = $theme; }
   public void set__genders_id($genders_id) { $this->genders_id = $genders_id; }
+
+}
