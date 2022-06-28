@@ -7,7 +7,7 @@ class DB {
   private String $name;
   private String $email;
   private String $password;
-  private String $theme
+  private String $theme;
   private int    $genders_id;
   
   /* functions */
