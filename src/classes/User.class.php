@@ -28,4 +28,10 @@ class User extends DB {
   public function set__theme($theme)           { $this->theme      = $theme; }
   public function set__genders_id($genders_id) { $this->genders_id = $genders_id; }
 
+  // databases
+  public function select_single_user($id) {
+    $result = $this->pdo()->query()->fetchAll(PDO::FETCH_ASSOC);
+    return $result;
+  }
+  
 }
