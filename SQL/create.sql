@@ -27,20 +27,21 @@ CREATE TABLE `questions` (
     PRIMARY KEY (id)
 )
 
-CREATE TABLE `choices` (
-    questions_id  INT     (4)   NOT NULL,
-    choise_one    String  (255) NOT NULL,
-    choise_two    String  (255) NOT NULL,
-    choise_three  String  (255) NOT NULL,
-    choise_four   String  (255) NOT NULL,
-    choise_five   String  (255) NOT NULL,
-    FOREIGN KEY (questions_id) REFERENCES questions(id)
-)
+-- CREATE TABLE `choices` (
+--     questions_id  INT     (4)   NOT NULL,
+--     choise_one    String  (255) NOT NULL,
+--     choise_two    String  (255) NOT NULL,
+--     choise_three  String  (255) NOT NULL,
+--     choise_four   String  (255) NOT NULL,
+--     choise_five   String  (255) NOT NULL,
+--     FOREIGN KEY (questions_id) REFERENCES questions(id)
+-- )
 
 CREATE TABLE `users_answers_questions` (
     users_id      INT     (4)   NOT NULL,                  -- PK FK NN
     questions_id  INT     (4)   NOT NULL,                  -- PK FK NN
-    answerdate    CHAR    (6)   NOT NULL,                  --       NN
+    answerdate    DATE    (6)   NOT NULL,                  --       NN
+    choice        int     (1)   NOT NULL, 
     PRIMARY KEY (users_id, questions_id),
     FOREIGN KEY (users_id)     REFERENCES users(id),
     FOREIGN KEY (questions_id) REFERENCES questions(id)
