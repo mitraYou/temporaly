@@ -27,6 +27,16 @@ CREATE TABLE `questions` (
     PRIMARY KEY (id)
 )
 
+CREATE TABLE `choices` (
+    questions_id  INT     (4)   NOT NULL,
+    choise_one    String  (255) NOT NULL,
+    choise_two    String  (255) NOT NULL,
+    choise_three  String  (255) NOT NULL,
+    choise_four   String  (255) NOT NULL,
+    choise_five   String  (255) NOT NULL,
+    FOREIGN KEY (questions_id) REFERENCES questions(id)
+)
+
 CREATE TABLE `users_answers_questions` (
     users_id      INT     (4)   NOT NULL,                  -- PK FK NN
     questions_id  INT     (4)   NOT NULL,                  -- PK FK NN
