@@ -3,16 +3,6 @@
 $data = json_decode(file_get_contents('php://input'), true);
 
 $totalling;
-/***ここから***/
-
-////data['choice'][0]からdata['choice'][4]に回答入ってます
-
-
-
-
-////totallingに結果を入れてください
-
-/***ここまで***/
 
 $dsn = 'mysql:host=localhost;dbname=u22;charset=utf8mb4';
 $db_user = 'root';
