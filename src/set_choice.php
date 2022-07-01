@@ -2,7 +2,15 @@
 
 $data = json_decode(file_get_contents('php://input'), true);
 
-$totalling;
+$totalling = 0;
+
+////data['choice'][0]からdata['choice'][4]に回答入ってます
+
+for ($i=0; $i < count($date['choice'],COUNT_RECURSIVE); $i++){
+    $totalling += $date['choice'][$i]; 
+}
+
+////totallingに結果を入れてください
 
 $dsn = 'mysql:host=localhost;dbname=u22;charset=utf8mb4';
 $db_user = 'root';
