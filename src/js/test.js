@@ -2,8 +2,8 @@ var array
 
 var users_id = "1"
 
-var question_id = []
-var answers = []
+var questions_id = []
+var choice = []
 
 //初期質問
 var Question = document.getElementById("question")
@@ -14,16 +14,17 @@ var decisionButton = document.getElementById("decisionButton")
 var counter = 0
 
 
-var api_url = 'http://localhost/temporaly-main/src/'
+var api_url = 'http://localhost/Github/U22/temporaly/src/'
 
-//質問の結果をINSERTする為にset_answersにpostする
+//質問の結果をINSERTする為にset_choiceにpostする
 decisionButton.addEventListener("click", function () {
+  choice[4] = bar.value
   let data = {
     "users_id": users_id,
-    "question_id": question_id,
-    "answers": answers
+    "questions_id": questions_id,
+    "choice": choice
   }
-  fetch(api_url+'set_answers.php', {
+  fetch(api_url+'set_choice.php', {
     method: 'post',
     header: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
@@ -39,7 +40,7 @@ fetch(api_url+'get_questions.php', {
     console.log(json)
     array = json
     for (let i = 0; i < 5; i++) {
-      question_id[i] = json[i]["id"]
+      questions_id[i] = json[i]["id"]
     }
     Question.innerHTML = array[0][1]
   })  
@@ -53,7 +54,7 @@ checkButton.addEventListener("click", function () {
     checkButton.classList.add("hide")
     decisionButton.classList.remove("hide")
   }
-  answers[counter] = bar.value
+  choice[counter] = bar.value
   counter++
   Question.innerHTML = (array[counter][1])
   kazu.innerHTML = counter
@@ -66,7 +67,7 @@ backButton.addEventListener("click", function () {
     decisionButton.classList.add("hide")
   }
   counter--
-  bar.value = (answers[counter])
+  bar.value = (choice[counter])
   Question.innerHTML = (array[counter][1])
   kazu.innerHTML = counter
 })
