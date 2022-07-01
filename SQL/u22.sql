@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS `questions` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
 -- テーブル u22.questions: ~5 rows (約) のデータをダンプしています
+DELETE FROM `questions`;
 /*!40000 ALTER TABLE `questions` DISABLE KEYS */;
 INSERT INTO `questions` (`id`, `description`, `weight`) VALUES
 	(1, '元気ですか？', 0),
@@ -35,6 +36,23 @@ INSERT INTO `questions` (`id`, `description`, `weight`) VALUES
 	(4, '３です', 3),
 	(5, '４です', 4);
 /*!40000 ALTER TABLE `questions` ENABLE KEYS */;
+
+--  テーブル u22.statuses の構造をダンプしています
+DROP TABLE IF EXISTS `statuses`;
+CREATE TABLE IF NOT EXISTS `statuses` (
+  `id` int(8) NOT NULL,
+  `users_id` int(4) NOT NULL,
+  `totallingdate` timestamp NOT NULL DEFAULT current_timestamp(),
+  `totalling` int(1) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_statuses_users` (`users_id`),
+  CONSTRAINT `FK_statuses_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- テーブル u22.statuses: ~0 rows (約) のデータをダンプしています
+DELETE FROM `statuses`;
+/*!40000 ALTER TABLE `statuses` DISABLE KEYS */;
+/*!40000 ALTER TABLE `statuses` ENABLE KEYS */;
 
 --  テーブル u22.users の構造をダンプしています
 DROP TABLE IF EXISTS `users`;
@@ -48,7 +66,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
--- テーブル u22.users: ~0 rows (約) のデータをダンプしています
+-- テーブル u22.users: ~1 rows (約) のデータをダンプしています
+DELETE FROM `users`;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `theme`, `genders_id`) VALUES
 	(1, 'test_user', '12345', NULL, '1a1a1a', 0);
@@ -68,6 +87,7 @@ CREATE TABLE IF NOT EXISTS `users_answers_questions` (
 ) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=utf8mb4;
 
 -- テーブル u22.users_answers_questions: ~0 rows (約) のデータをダンプしています
+DELETE FROM `users_answers_questions`;
 /*!40000 ALTER TABLE `users_answers_questions` DISABLE KEYS */;
 /*!40000 ALTER TABLE `users_answers_questions` ENABLE KEYS */;
 
