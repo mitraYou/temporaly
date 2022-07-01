@@ -38,8 +38,9 @@ CREATE TABLE `questions` (
 -- )
 
 CREATE TABLE `users_answers_questions` (
-    users_id      INT     (4)   NOT NULL,                  -- PK FK NN
-    questions_id  INT     (4)   NOT NULL,                  -- PK FK NN
+    id            INT     (6)   NOT NULL AUTO_INCREMENT,   -- PK    NN
+    users_id      INT     (4)   NOT NULL,                  --    FK NN
+    questions_id  INT     (4)   NOT NULL,                  --    FK NN
     answerdate    DATE    (6)   NOT NULL,                  --       NN
     choice        int     (1)   NOT NULL, 
     PRIMARY KEY (users_id, questions_id),
