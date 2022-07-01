@@ -14,6 +14,8 @@ var decisionButton = document.getElementById("decisionButton")
 var counter = 0
 
 
+var api_url = 'http://localhost/temporaly-main/src/'
+
 //質問の結果をINSERTする為にset_answersにpostする
 decisionButton.addEventListener("click", function () {
   let data = {
@@ -21,7 +23,7 @@ decisionButton.addEventListener("click", function () {
     "question_id": question_id,
     "answers": answers
   }
-  fetch('http://localhost/temporaly-main/src/set_answers.php', {
+  fetch(api_url+'set_answers.php', {
     method: 'post',
     header: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
@@ -29,7 +31,7 @@ decisionButton.addEventListener("click", function () {
 })
 
 //質問文と質問IDを取得するためにget_questionsにgetする
-fetch('http://localhost/temporaly-main/src/get_questions.php', {
+fetch(api_url+'get_questions.php', {
   method: 'get',
   header: { 'Content-Type': 'application/json' }
 }).then(res => res.json())
