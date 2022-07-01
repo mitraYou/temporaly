@@ -10,6 +10,16 @@ for ($i=0; $i < count($date['choice'],COUNT_RECURSIVE); $i++){
     $totalling += $date['choice'][$i]; 
 }
 
+if($totalling <= 3){
+    echo '大丈夫';
+}else if($totalling <= 6){
+    echo '気分転換をしよう';
+}else if($totalling <= 9){
+    echo '危険気味';
+}else if($totalling <= 12){
+    echo '危険';
+}
+
 ////totallingに結果を入れてください
 
 $dsn = 'mysql:host=localhost;dbname=u22;charset=utf8mb4';
