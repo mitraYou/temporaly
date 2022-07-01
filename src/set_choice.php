@@ -12,19 +12,6 @@ for ($i=0; $i < count($date['choice'],COUNT_RECURSIVE); $i++){
 
 ////totallingに結果を入れてください
 
-/***ここから***/
-
-////data['choice'][0]からdata['choice'][4]に回答入ってます
-
-
-
-
-
-
-////totallingに結果を入れてください
-
-/***ここまで***/
-
 $dsn = 'mysql:host=localhost;dbname=u22;charset=utf8mb4';
 $db_user = 'root';
 $db_password = '';
