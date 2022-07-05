@@ -40,7 +40,7 @@ INSERT INTO `questions` (`id`, `description`, `weight`) VALUES
 --  テーブル u22.statuses の構造をダンプしています
 DROP TABLE IF EXISTS `statuses`;
 CREATE TABLE IF NOT EXISTS `statuses` (
-  `id` int(8) NOT NULL,
+  `id` int(8) NOT NULL AUTO_INCREMENT,
   `users_id` int(4) NOT NULL,
   `totallingdate` timestamp NOT NULL DEFAULT current_timestamp(),
   `totalling` int(1) NOT NULL,
