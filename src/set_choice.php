@@ -4,23 +4,20 @@ $data = json_decode(file_get_contents('php://input'), true);
 
 $totalling = 0;
 
-////data['choice'][0]からdata['choice'][4]に回答入ってます
-
 for ($i=0; $i < count($date['choice'],COUNT_RECURSIVE); $i++){
-    $totalling += $date['choice'][$i]; 
+    $sum += $date['choice'][$i]; 
 }
-
-if($totalling <= 3){
-    echo '大丈夫';
-}else if($totalling <= 6){
-    echo '気分転換をしよう';
-}else if($totalling <= 9){
-    echo '危険気味';
-}else if($totalling <= 12){
-    echo '危険';
+if($sum <= 4){
+    $totalling = 0;
+}else if($sum <= 8){
+	$totalling = 1;
+}else if($sum <= 12){
+	$totalling = 2;
+}else if($sum <= 16){
+    $totalling = 3;
+}else {
+	$totalling = 4;
 }
-
-////totallingに結果を入れてください
 
 $dsn = 'mysql:host=localhost;dbname=u22;charset=utf8mb4';
 $db_user = 'root';
