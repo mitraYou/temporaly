@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>calendar</title>
+        <!-- css -->
+        <link rel="stylesheet" href="./style_calendar.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/favicon.ico">
+    </head>
+    <body scroll="no">
+        <div class="wrapper">
+            <!-- display current year/month -->
+            <h1 id="header"></h1>
+        
+            <!-- changing the month by clicking -->
+            <div id="next-prev-button">
+                <button id="prev" onclick="prev()">‹</button>
+                <button id="next" onclick="next()">›</button>
+            </div>
+        
+            <!-- the calendar area -->
+            <div id="calendar">
+                <!-- app.js sets the calendar here. -->
+            </div>
+        </div>
+    </body>
+    <script src="./app.js"></script>
+</html>
