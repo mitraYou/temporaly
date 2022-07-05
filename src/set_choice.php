@@ -32,6 +32,7 @@ for ($i=0; $i < 5; $i++) {
     $stmt->bindValue(':choice', $data['choice'][$i]);
     $stmt->execute();
 }
-$sql = 'INSERT INTO statuses (totalling) VALUES (:totalling)';
+$sql = 'INSERT INTO statuses (user_id,totalling) VALUES (:user_id,:totalling)';
+$stmt->bindValue(':users_id', $data['users_id']);
 $stmt->bindValue(':totalling', $totalling);
 $stmt->execute();
