@@ -1,22 +1,11 @@
 <?php
-
+header("Access-Control-Allow-Origin: *");
 $data = json_decode(file_get_contents('php://input'), true);
 
 $totalling = 0;
 
-for ($i=0; $i < count($date['choice'],COUNT_RECURSIVE); $i++){
-    $sum += $date['choice'][$i]; 
-}
-if($sum <= 4){
-    $totalling = 0;
-}else if($sum <= 8){
-	$totalling = 1;
-}else if($sum <= 12){
-	$totalling = 2;
-}else if($sum <= 16){
-    $totalling = 3;
-}else {
-	$totalling = 4;
+for ($i=0; $i < count($data['choice'],COUNT_RECURSIVE); $i++){
+    $totalling += $data['choice'][$i];
 }
 
 $dsn = 'mysql:host=localhost;dbname=u22;charset=utf8mb4';
@@ -32,7 +21,8 @@ for ($i=0; $i < 5; $i++) {
     $stmt->bindValue(':choice', $data['choice'][$i]);
     $stmt->execute();
 }
-$sql = 'INSERT INTO statuses (user_id,totalling) VALUES (:user_id,:totalling)';
+$sql = 'INSERT INTO statuses (users_id,totalling) VALUES (:users_id,:totalling)';
+$stmt = $pdo->prepare($sql);
 $stmt->bindValue(':users_id', $data['users_id']);
 $stmt->bindValue(':totalling', $totalling);
 $stmt->execute();
