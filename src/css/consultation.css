@@ -103,8 +103,8 @@ img.cat{
     font-size: 70px;
 }
 svg{
-    width: 70px;
-    height: 70px;
+    width:100%;
+    height:100%;
     fill:#824900;
 }
 button{
@@ -667,9 +667,9 @@ button.btn {
     display: table;
   }
   /* 吹き出し */
-  #question {
+.input_data {
     display: inline-block;
-    position: relative; 
+    position: relative;
     margin: 0 10px 0 0;
     padding: 8px;
     width: 100%;
@@ -679,12 +679,10 @@ button.btn {
     font-size: 30px;
     text-align: center;
     /* 中央ぞろえ */
-    display: table-cell;
-    vertical-align: middle;
-    
+
   }
   /* 吹き出しの△のとこ */
-  #question:after {
+.input_data:after {
     content: "";
     position: absolute;
     bottom: 4%; 
@@ -699,36 +697,102 @@ button.btn {
   }
 
 .input_Button{
-    bottom: 0;
-    right: 0;
+    bottom: 5%;
+    right: 5%;
     /* background-color: salmon; */
     position: absolute;
+    width: 10%;
+    height: 10%;
+    /* background-color: darkblue; */
 }
 
-#question input{
+.input_data input{
     border-bottom: 2px solid #824900;
+    text-align: center;
+    /* background-color: darkcyan; */
+    width: 90%;
 }
+
 .kakuninn{
     /* background-color: darkcyan; */
+    margin: 10% 5% 5% 5%;
 }
-#question table{
+.table{
     width: 100%;
     color: #824900;
+    /* background-color: darkgray; */
 }
-#question th{
+.input_data th{
     width: 40%;
     /* background-color: #000; */
     letter-spacing: 3px;
     font-size: 32px;
-    padding: 7% 0;
+    padding: 4% 0;
 }
-#question td{
+/* #question td{
     padding:  7% 0;
-}
-#question form{
-    margin: 0 3%;
-}
+} */
+/* .input_data form{
+    margin: 0 3% 5% 3%;
+} */
 .form_check{
     font-size: 24px;
     color: #824900;
+    text-align: left;
+    margin-left: 3%;
+    bottom: 0;
+    margin-top: 5%;
+    /* background-color: salmon; */
+}
+.table_check{
+    /* background-color: darkgreen; */
+    top: 0;
+    height: auto;
+    line-height:0;
+    width: 10%;
+}
+.table_check td{
+    text-align: right;
+    font-size: 16px;
+    /* background-color: darkgreen; */
+    /* line-height: 30px; */
+
+}
+.table_tr td{
+    /* background-color: darkcyan; */
+    text-align: right;
+}
+/* .input_question{
+    background-color: darkmagenta;
+    
+} */
+.input_question p{
+    text-align: right;
+    font-size: 16px;
+}
+.data h2{
+    font-size: 46px;
+    /* background-color: darkcyan; */
+    margin-top: 20%;
+    color: #824900;
+}
+.data p{
+    font-size: 16px;
+    color: #824900;
+    text-align: right;
+    padding-right: 5%;
+}
+.data{
+    /* background-color: darkmagenta; */
+    margin: 15% 5%;
+}
+.data input[type="text"]{
+    height: 100px;
+    margin-top: 30%;
+}
+.input_kazu{
+    font-size: 16px;
+    color: #824900;
+    margin: 0;
+    padding: 0;
 }

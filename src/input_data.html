@@ -24,17 +24,20 @@
       <div class="input_hukidasi">
         <div class="input_comment">
 
-          <div id="question">
+          <div id="question" class="input_data">
             <!-- phpにデータ送ってからdataに推移予定 -->
             <div class="kakuninn">
               <p class="form_check">
                 *必ず入力してね
               </p>
             <form action="input_name.html">
-              <table>
-                <tr><th>*ユーザーid</th><td><input type="text" name="user_name" id="user_name"></td></tr>
-                <tr><th>*パスワード</th><td><input type="password" name="password" id="password"></td></tr>
-                <tr><th>*パスワード</th><td><input type="password" name="password_check" id="password_check"></td></tr>
+              <table class="table">
+                <tr class="table_tr"><th>*ユーザーid</th><td><input type="text" name="user_name" id="user_name"></td></tr>
+                <tr class="table_check"><th><td>入力してね</td></th></tr>
+                <tr class="table_tr"><th>*パスワード</th><td><input type="password" name="password" id="password"></td></tr>
+                <tr class="table_check"><th><td>入力してね</td></th></tr>
+                <tr  class="table_tr"><th>*パスワード(再入力)</th><td><input type="password" name="password_check" id="password_check"></td></tr>
+                <tr class="table_check"><th></th><td>入力してね</td></tr>
               </table>
               
               <!-- <input type="submit" value=""> -->
@@ -49,6 +52,9 @@
           </div>
         </form>
       </div>
+
+         <!-- 現在地出したい -->
+         <div id="kazu" class="input_kazu">2/3</div>
             <!-- <div class="question" id="question"></div> -->
         </div>
           
@@ -61,8 +67,7 @@
       
     
 
-      <!-- 現在地出したい -->
-      <div id="kazu" class="kazu"></div>
+   
 
 
 

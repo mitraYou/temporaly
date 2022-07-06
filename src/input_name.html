@@ -14,7 +14,8 @@
 
 <body>
   <div class="body">
-    <div class="kakoi input">
+    <div class="kakoi">
+      <div class="input">
       <!-- ユーザーごとに画像変える(仮の猫) -->
       <div class="input_flex">
       <img src="images/images-removebg-preview.png" class="input-cat">
@@ -22,12 +23,17 @@
     <div class="input_flex">
       <div class="input_hukidasi">
         <div class="input_comment">
-
-          <div id="question">
+         
+          <div id="question" class="input_data">
             <!-- phpにデータ送ってからdataに推移予定 -->
+            <div class="data">
             <h2>なんて呼んだらいいかな？</h2>
-            <form action="#">
-              <input type="text" name="user_name" id="user_name">
+            <form action="input_data.html">
+     
+              <input type="text" name="partner_name" id="partner_name" value="">
+              <p>入力してね</p>
+            </div>
+
               <!-- <input type="submit" value=""> -->
             <div class=" input_Button">
             <button type="submit" id="checkButton">
@@ -39,19 +45,21 @@
             </button>
           </div>
         </form>
+          <!-- 現在地出したい -->
+      <div id="kazu"  class="input_kazu">3/3</div>
             <!-- <div class="question" id="question"></div> -->
         </div>
           
         </div>
       </div>
     </div>
+  </div>
 
         <!-- <img src="images/unknown-removebg-preview.png" class="hukidasi2"> -->
       
     
 
-      <!-- 現在地出したい -->
-      <div id="kazu" class="kazu"></div>
+    
 
 
 
