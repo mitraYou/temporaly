@@ -520,8 +520,9 @@ a.btn--red.btn--cubic {
     border-bottom: 5px solid #9c9c9c7e;
     background-color:#EEF8CD;
     border-radius: 50px;
-    padding: 0 50px;
-    margin-bottom: 30px;
+	width: 300px;
+    margin: 0 auto;
+}
   }
   
   a.btn--red.btn--cubic:hover {
@@ -561,7 +562,6 @@ button.btn {
   font-weight: 700;
   line-height: 1.5;
   position: relative;
-  display: inline-block;
   padding: 1rem 4rem;
   cursor: pointer;
   -webkit-user-select: none;
