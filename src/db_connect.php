@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 $dsn = 'mysql:host=localhost;dbname=u22;charset=utf8mb4';
 $db_user = 'root';
 $db_password = '';
