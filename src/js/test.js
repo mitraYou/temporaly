@@ -14,7 +14,7 @@ var decisionButton = document.getElementById("decisionButton")
 var counter = 0
 
 
-var api_url = 'http://localhost/Github/U22/temporaly/src/'
+var api_url = 'http://localhost/temporaly/src/'
 
 //質問の結果をINSERTする為にset_choiceにpostする
 decisionButton.addEventListener("click", function () {

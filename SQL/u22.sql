@@ -44,9 +44,7 @@ CREATE TABLE IF NOT EXISTS `statuses` (
   `users_id` int(4) NOT NULL,
   `totallingdate` timestamp NOT NULL DEFAULT current_timestamp(),
   `totalling` int(1) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK_statuses_users` (`users_id`),
-  CONSTRAINT `FK_statuses_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- テーブル u22.statuses: ~0 rows (約) のデータをダンプしています
@@ -81,9 +79,7 @@ CREATE TABLE IF NOT EXISTS `users_answers_questions` (
   `questions_id` int(4) NOT NULL,
   `answerdate` timestamp NOT NULL DEFAULT current_timestamp(),
   `choice` int(1) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `FK_users_answers_questions_users` (`users_id`),
-  CONSTRAINT `FK_users_answers_questions_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=utf8mb4;
 
 -- テーブル u22.users_answers_questions: ~0 rows (約) のデータをダンプしています
