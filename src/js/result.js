@@ -1,4 +1,6 @@
+
 var api_url = 'http://localhost/temporaly/src/'
+
 
 var users_id = "1"
 
@@ -30,3 +32,4 @@ fetch(api_url + 'totalling_api.php', {
 	}
 	result.innerHTML = res
   })
+

@@ -1,3 +1,18 @@
+/*
+WEBフォントで「ふい字(HuiFontP109)」 ver130717
+http://customtemplate.blog112.fc2.com/blog-entry-143.html
+*/
+@font-face{
+    font-family:'HuiFontP109';
+    src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot');
+    src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot?#iefix') format('embedded-opentype'),
+    url('https://dl.dropboxusercontent.com/s/7pscemjdvt0wyiq/HuiFontP109.woff') format('woff'),
+    url('https://dl.dropboxusercontent.com/s/0w9uuopxrns8ehi/HuiFontP109.ttf') format('truetype'),
+    url('https://dl.dropboxusercontent.com/s/xnnsbxtz8o6d98i/HuiFontP109.svg#HuiFontP109') format('svg');
+    }
+    body,input,textarea{font-family:'HuiFontP109';font-size:16px;}
+
+
 body {
   -webkit-text-size-adjust: 100%;
 }
@@ -292,7 +307,8 @@ a.btn--red.btn--cubic {
   border-bottom: 5px solid #9c9c9c7e;
   background-color: #EEF8CD;
   border-radius: 50px;
-  padding: 0 50px;
+  width: 300px;
+  margin: 0 auto;
 }
 
 a.btn--red.btn--cubic:hover {
@@ -332,7 +348,6 @@ button.btn {
   font-weight: 700;
   line-height: 1.5;
   position: relative;
-  display: inline-block;
   padding: 1rem 4rem;
   cursor: pointer;
   -webkit-user-select: none;

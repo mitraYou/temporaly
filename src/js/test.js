@@ -37,16 +37,12 @@ fetch(api_url+'get_questions.php', {
   header: { 'Content-Type': 'application/json' }
 }).then(res => res.json())
   .then((json) => {
-    console.log(json)
     array = json
     for (let i = 0; i < 5; i++) {
       questions_id[i] = json[i]["id"]
     }
     Question.innerHTML = array[0][1]
-  })  
-  
-
-// window.location.assign('../result.html')
+  })
 
 //nextクリック
 checkButton.addEventListener("click", function () {
