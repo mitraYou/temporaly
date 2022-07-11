@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* reset-css will be set */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Common */
+.wrapper{
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+#header {
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    margin: 1rem 0 0;
+}
+
+/* Calendar */
+#calendar {
+    text-align: center;
+    width: 100%;
+}
+table {
+    outline: 2px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    color: #000;
+}
+th, td {
+    outline: 1px solid #ddd;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+/* Sun */
+td:first-child {
+    color: red;
+}
+/* Sat */
+td:last-child {
+    color: blue;
+}
+/* Prev/ Next month */
+td.disabled {
+    color: #ccc;
+}
+/* Today */
+td.today {
+    background-color: #D65E72;
+    color: #fff;
+}
+
+/* Buttons */
+#next-prev-button {
+    position: relative;
+}
+#next-prev-button button{
+    cursor: pointer;
+    background: #B78D4A;
+    color: #fff;
+    border: 1px solid #B78D4A;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+}
+#next-prev-button button:hover{
+    background-color: #D4BB92;
+    border-color: #D4BB92;
+}
+#prev {
+    float: left;
+}
+#next {
+    float: right;
+}
