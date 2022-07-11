@@ -384,7 +384,8 @@ nav img {
 .top-catbox {
 	text-align: center;
 	position: absolute;
-	margin-left: 20%;
+	margin-left: 5%;
+	margin-top: -100px;
 
 }
 
