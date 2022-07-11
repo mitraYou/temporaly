@@ -1,5 +1,6 @@
 body {
 	-webkit-text-size-adjust: 100%;
+	/* background-color: #824900; */
 }
 
 .kakoi {
@@ -361,11 +362,13 @@ nav {
 }
 
 ul {
+	margin-top: -50px;
 	display: flex;
 	justify-content: end;
 }
 
 li {
+	margin-top: -50px;
 	list-style: none;
 
 }
@@ -465,3 +468,5 @@ nav img {
 .hide {
 	display: none;
 }
+
+
