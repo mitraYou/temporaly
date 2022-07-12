@@ -208,7 +208,7 @@ svg{
     z-index: -100;
   }
 .kazu{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     padding: 3% 0;
     margin: 5% 0;
 }
@@ -579,9 +579,9 @@ a.btn--red.btn--cubic {
     border-bottom: 5px solid #9c9c9c7e;
     background-color:#EEF8CD;
     border-radius: 50px;
-	width: 300px;
-    margin: 0 auto;
-}
+    padding: 0 50px;
+    margin-bottom: 30px;
+  }
   
   a.btn--red.btn--cubic:hover {
     margin-top: 3px;
@@ -620,6 +620,7 @@ pointerbutton.btn {
   font-weight: 700;
   line-height: 1.5;
   position: relative;
+  display: inline-block;
   padding: 1rem 4rem;
   cursor: pointer;
   -webkit-user-select: none;
@@ -649,6 +650,7 @@ pointerbutton.btn {
     padding: 5%;
 }
 
+/* 登録ページ */
 .input{
     display: flex;
     align-items: flex-start;
@@ -711,7 +713,7 @@ pointerbutton.btn {
     z-index: -1;
   }
 
-.input_Button{
+.check_input_Button{
     bottom: 5%;
     right: 5%;
     /* background-color: salmon; */
@@ -719,6 +721,23 @@ pointerbutton.btn {
     width: 10%;
     height: 10%;
     /* background-color: darkblue; */
+}
+.back_input_Button{
+    top: 5%;
+    left: 5%;
+    /* background-color: salmon; */
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    /* background-color: darkblue; */
+}
+.input_data button{
+    width: 100%;
+    height: 100%;
+}
+.input_data svg{
+    width: 100%;
+    height: 100%;
 }
 
 .input_data input{
@@ -729,7 +748,7 @@ pointerbutton.btn {
 }
 
 .kakuninn{
-    /* background-color: darkcyan; */
+    
     margin: 10% 5% 5% 5%;
 }
 .table{
@@ -737,12 +756,8 @@ pointerbutton.btn {
     color: #824900;
     /* background-color: darkgray; */
 }
-.input_data th{
-    width: 40%;
-    /* background-color: #000; */
-    letter-spacing: 3px;
-    font-size: 32px;
-    padding: 4% 0;
+.table tr{
+    height: 10px;
 }
 /* #question td{
     padding:  7% 0;
@@ -773,6 +788,13 @@ pointerbutton.btn {
     /* line-height: 30px; */
 
 }
+.table_tr th{
+    width: 40%;
+    /* background-color: #000; */
+    letter-spacing: 3px;
+    font-size: 32px;
+    padding: 4% 0;
+}
 .table_tr td{
     /* background-color: darkcyan; */
     text-align: right;
@@ -788,7 +810,7 @@ pointerbutton.btn {
 .data h2{
     font-size: 46px;
     /* background-color: darkcyan; */
-    margin-top: 20%;
+    /* margin-top: 20%; */
     color: #824900;
 }
 .data p{
@@ -799,9 +821,9 @@ pointerbutton.btn {
 }
 .data{
     /* background-color: darkmagenta; */
-    margin: 15% 5%;
+    margin: 20% 5%;
 }
-.data input[type="text"]{
+.text{
     height: 100px;
     margin-top: 30%;
 }
@@ -839,8 +861,8 @@ pointerbutton.btn {
     color: #824900;
     margin: 5% auto;
     letter-spacing: 10px;
-    /* background-color: darkgoldenrod; */
-    
+    /* background-color: darkgoldenrod;
+     */
 }
 .choose_btn h2{
     font-size: 32px;
@@ -902,4 +924,19 @@ a.choose_btn:hover {
 
 .active{
     filter: blur(0);
+}
+
+/* 要素隠す */
+.hide {
+    display: none;
+}
+.touroku{
+    /* background-color: darkgrey; */
+    margin-top: -20%;
+}
+.register_btn h2{
+    margin: 5% 0;
+}
+.register_btn {
+    margin-top: 10%;
 }
