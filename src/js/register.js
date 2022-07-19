@@ -85,19 +85,24 @@ check.addEventListener('click', function () {
     console.log(input_arr)
 })
 
+animal = 1
+
+var api_url = 'http://localhost/Github/U22/temporaly/src/'
+
 //登録ボタン押す
 end.addEventListener('click', function () {
     //最後質問
     input_arr[2] = text.value
     //データべ＾－スに送る作業　←追加したので適宜変更願いします。
     let data = {
-        "name": input_arr[0],
-        "animal": input_arr[2],
-        "user_id":data_input_arr[0],
+		"animalname": input_arr[0],
+        "userid":data_input_arr[0],
         //確認のためのパスワード二回目のやつDBに送る？
-        "password":data_input_arr[1]
+		"password": data_input_arr[1],
+        "username": input_arr[2],
+		"animal": animal
     }
-    fetch('http://localhost/test/test.php', {
+    fetch(api_url + 'register.php', {
         method: 'post',
         header: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
