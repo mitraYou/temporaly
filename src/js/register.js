@@ -6,23 +6,29 @@ var page = document.getElementById('page')
 var end = document.getElementById('end')
 var table = document.getElementById('table')
 var data_input = document.getElementsByName('data')
+var secret = document.getElementById('secret')
 
 var counter = 0
 
-var description_arr = ['なまえをつけて？','','なんて呼んだらいいかな？']
-var input_arr = ["","",""]
+var description_arr = ['なまえをつけて？','','なんて呼んだらいいかな？','秘密の質問えらんでね']
+var input_arr = ["","","",""]
 var data_input_arr = ["","",""]
+var secret_question = ['Q好きな動物は？','Qあなたのニックネームは？','Q好きなキャラクターは？','Q好きな食べ物は？','Q思い出の場所は？']
+var secret_input_arr = ["",""]
 
 
 //左矢印おす
 back.addEventListener('click', function () {
   //多分最後のページ行ったら
+    if (counter == 3) {
+    table.classList.add('hide')
+    end.classList.add('hide')
+}
+    counter--
     if (counter == 2) {
         check.classList.remove('hide')
         table.classList.add('hide')
-        end.classList.add('hide')
     }
-    counter--
     if(counter == 1){
         //パスワードとか入れるテーブル出したい
         description.classList.add('hide')
@@ -68,14 +74,39 @@ check.addEventListener('click', function () {
     if (counter == 2) {
         description.classList.remove('hide')
         text.classList.remove('hide')
-        check.classList.add('hide')
+        // check.classList.add('hide')
         table.classList.add('hide')
         for(var i = 0; i < data_input.length ; i++){
             data_input_arr[i] = data_input[i].value
         }
         console.log(data_input_arr)
+    }if (counter == 3) {
+        description.classList.remove('hide')
+        secret.classList.remove('hide')
+        text.classList.add('hide')
+        check.classList.add('hide')
+        table.classList.add('hide')
         end.classList.remove('hide')
+
+        if(secret_question[i]){
+
+        }
+        // var buttonClick = function() {
+        //     alert("hello");
+        // }();
+        
+    
+        // buttonClick(); 
+    //     for(var i = 0; i < secret_arr.length; i++){
+    //     secret[i].innerHTML = secret_arr[i]
+    //     console.log(secret_arr[i])
+    // }
+    //    secret.addEventListener('secret', function(){
+    //     alert('Click');
+    //    })
+        
     }
+    
      //テキストの値に配列に入ってる文字を入れる
     text.value = input_arr[counter]
     //入力してもらいたい文字を出す
@@ -84,6 +115,12 @@ check.addEventListener('click', function () {
     page.innerHTML = (counter+1) + "/3"
     console.log(input_arr)
 })
+
+
+// function QuestionClick(){
+    
+// }
+
 
 //登録ボタン押す
 end.addEventListener('click', function () {
@@ -103,3 +140,5 @@ end.addEventListener('click', function () {
         body: JSON.stringify(data)
     })
 })
+
+// function clickSecret()
