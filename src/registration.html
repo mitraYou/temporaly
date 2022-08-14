@@ -39,14 +39,17 @@
                   <!-- </h1> -->
                 </div>
 
+
+
                 <div class="data">
                   <!-- 最初と最後 -->
-                  <h2 id="description">なまえをつけて？</h2>
+                  <h2 id="description"></h2>
                   <!-- <form action="input_data.html"> -->
-                  <input type="text" name="" id="input_text" value="" class="text">
+                  <input type="text" name="" id="input_text" value="" class="text" required data-maxlength="10"/>
+				  <p id="emptyAlert1" class="hide" style="color: red;"></p>
+
 
                   <!-- 二番目 -->
-
                   <table class="table hide" id="table">
                     <tr class="form_check">
                       <th>*必ず入力してね</th>
@@ -54,7 +57,7 @@
                     </tr>
                     <tr class="table_tr">
                       <th>*ユーザーid</th>
-                      <td><input type="text" name="data" id="data_input[0]" value=""></td>
+                      <td><input type="text" name="data" id="data_input[0]"  value="" data-maxlength="10" required /></td>
                     </tr>
                     <tr class="table_check">
                       <th></th>
@@ -63,7 +66,7 @@
                     </tr>
                     <tr class="table_tr">
                       <th>*パスワード</th>
-                      <td><input type="password" name="data" id="data_input[1]" value=""></td>
+                      <td><input type="password" name="data" id="data_input[1]"  value="" required /></td>
                     </tr>
                     <tr class="table_check">
                       <th></th>
@@ -72,21 +75,32 @@
                     </tr>
                     <tr class="table_tr">
                       <th>*パスワード(再入力)</th>
-                      <td><input type="password" name="data" id="data_input[2]" value=""></td>
+                      <td><input type="password" name="data" id="data_input[2]"  value="" required /></td>
                     </tr>
                     <tr class="table_check">
                       <th></th>
                       <td>入力してね</td>
                     </tr>
                   </table>
+				  <p id="emptyAlert2" class="hide" style="color: red;"></p>
 
-                  <div class="secret hide" id="secret">
-                        <button id="secret_question[0]">Q好きな動物は？</button>
-                        <button id="secret_question[1]">Qあなたのニックネームは？</button>
-                        <button id="secret_question[2]">Q好きなキャラクターは？</button>
-                        <button id="secret_question[3]">Q好きな食べ物は？</button>
-                        <button id="secret_question[4]">Q思い出の場所は？</button>
-                        </div>
+
+                  <div class="secretClass hide" id="secretQuestionArea">
+						<select name="example" id="secret">
+							<option id="secret_question[0]" selected>Qあなたのニックネームは？</option>
+							<option id="secret_question[1]">Q好きなキャラクターは？</option>
+							<option id="secret_question[2]">Q好きな食べ物は？</option>
+							<option id="secret_question[3]">Q思い出の場所は？</option>
+							<option id="secret_question[4]">Q思い出の場所は？</option>
+						</select>
+
+						<input type="text" name="" value="" id="secret secretInput" class=" text required" data-maxlength="30" required style="margin-top: 120px;" />
+						<p id="emptyAlert4"  class="hide" style="color: red;"></p>
+
+						<!-- <input id="secret_question[0] type="radio" name="num_of_inq" value="はじめて">Q好きな動物は？
+						<input id="secret_question[1] type="radio" name="num_of_inq" value="２回目">Qあなたのニックネームは？
+						<input id="secret_question[2] type="radio" name="num_of_inq" value="３回以上">Q好きなキャラクターは？ -->
+                  </div>
 
                 </div>
 
@@ -132,6 +146,7 @@
   </div>
   </div>
 
+ <!-- validationJs -->
   <script src="js/register.js"></script>
 
 </body>
