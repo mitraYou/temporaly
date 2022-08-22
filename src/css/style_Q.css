@@ -127,7 +127,7 @@ button {
 /* 上部のタイトル共通 */
 .title{
   text-align: center;
-  font-size: 32px;
+  font-size: 45px;
   margin: 1% 0;
   /* background-color: #212529; */
 }
@@ -752,3 +752,60 @@ a.choose_btn:hover {
   margin: 0;
   padding: 0;
 }
+.secretClass{
+  color: #824900;
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+  appearance: menulist;
+}
+.select{
+  /* background-color: darkblue; */
+  border-bottom: 2px solid #824900;
+}
+.down{
+  font-size: 16px;
+  left: 0;
+}
+select{
+  text-align: center;
+}
+.container {
+    position: relative;
+    text-align: center;
+    background-color: #e2b476;
+    width: 50%;
+    margin: 0 auto;
+}
+.container:after {
+    content: "";
+    position: absolute;
+    /* right: 8px;
+    top: 12px;
+    width: 5px;
+    height: 5px; */
+    border-top: 2px solid #824900;
+    border-left: 2px solid #824900;
+    pointer-events: none;
+    transform: translateY(10%) rotate(
+-135deg);
+}
+/* .container::before {
+  border-bottom: 4.5px solid red;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  content: "";
+  position: absolute;
+  right: 9px;
+  top: 10px;
+  width: 0;
+}
+.container::after {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4.5px solid red;
+  content: "";
+  position: absolute;
+  right: 9px;
+  top: 21px;
+  width: 0;
+} */

@@ -89,17 +89,20 @@
 
 
                   <div class="secretClass hide" id="secretQuestionArea">
-						<select name="example" id="secret">
-							<option id="secret_question[0]" selected>Qあなたのニックネームは？</option>
+                    <div class="container">
+						<select name="example" id="secret" class="select">
+              <option hidden selected >ここからえらんでね</option>
+							<option id="secret_question[0]">Qあなたのニックネームは？</option>
 							<option id="secret_question[1]">Q好きなキャラクターは？</option>
 							<option id="secret_question[2]">Q好きな食べ物は？</option>
 							<option id="secret_question[3]">Q思い出の場所は？</option>
 							<option id="secret_question[4]">Q思い出の場所は？</option>
 						</select>
+          </div>
 
-						<input type="text" name="" value="" id="secret secretInput" class=" text required" data-maxlength="30" required style="margin-top: 120px;" />
+						<input type="text" name="" value="" id="secret secretInput" class=" text required" 
+            data-maxlength="30" required style="margin-top: 120px;" />
 						<p id="emptyAlert4"  class="hide" style="color: red;"></p>
-
 						<!-- <input id="secret_question[0] type="radio" name="num_of_inq" value="はじめて">Q好きな動物は？
 						<input id="secret_question[1] type="radio" name="num_of_inq" value="２回目">Qあなたのニックネームは？
 						<input id="secret_question[2] type="radio" name="num_of_inq" value="３回以上">Q好きなキャラクターは？ -->

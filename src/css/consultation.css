@@ -22,9 +22,9 @@ input,
 button,
 select,
 textarea {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+    appearance: none; */
     background: transparent;
     border: none;
     border-radius: 0;
@@ -425,9 +425,10 @@ img.cat{
 }
 .top-cat{
     height:700px;
-    margin-top: 20%;
+    /* margin-top: 20%; */
     /* margin-left: 5%;  */
     padding: 0 auto;
+    /* background-color: #70a6ff; */
 
 }
 
@@ -943,4 +944,45 @@ a.choose_btn:hover {
 }
 .register_btn {
     margin-top: 10%;
+}
+
+/* リザルトの感情 */
+.kakuninn3{
+    background-color: #000053;
+}
+.balloon3 {
+    position: relative;
+    display: inline-block;
+    left: 30%;
+    /* margin: 1.5em 0; */
+    padding: 0 5px;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    background: #cef0c2;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  
+  .balloon3:before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    left: 7%;
+    /* margin-left: 0px; */
+    border: 30px solid transparent;
+    border-top: 50px solid #cef0c2;
+    transform: rotate(40deg);
+    z-index: 0;
+  }
+.balloon3 img{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 10%;
+    top: 10%;
 }
