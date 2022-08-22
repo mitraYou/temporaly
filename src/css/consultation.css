@@ -950,7 +950,7 @@ a.choose_btn:hover {
 .kakuninn3{
     background-color: #000053;
 }
-.balloon3 {
+.emotion {
     position: relative;
     display: inline-block;
     left: 30%;
@@ -968,7 +968,7 @@ a.choose_btn:hover {
     box-sizing: border-box;
   }
   
-  .balloon3:before {
+  .emotion:before {
     content: "";
     position: absolute;
     bottom: -50px;
@@ -979,7 +979,7 @@ a.choose_btn:hover {
     transform: rotate(40deg);
     z-index: 0;
   }
-.balloon3 img{
+.emotion img{
     position: absolute;
     width: 150px;
     height: 150px;
