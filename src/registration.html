@@ -48,7 +48,7 @@
                   <!-- 最初と最後 -->
                   <h2 id="description"></h2>
                   <!-- <form action="input_data.html"> -->
-                  <input type="text" name="" id="input_text" value="" class="text" required data-maxlength="10"/>
+                  <input type="text" name="" id="input_text" value="aaaaaa" class="text" required data-maxlength="10"/>
 				  <p id="emptyAlert1" class="hide" style="color: red;"></p>
 
 
@@ -60,7 +60,7 @@
                     </tr>
                     <tr class="table_tr">
                       <th>*ユーザーid</th>
-                      <td><input type="text" name="data" id="data_input[0]"  value="" data-maxlength="10" required /></td>
+                      <td><input type="text" name="data" id="data_input[0]"  value="aaaaaa" data-maxlength="10" required /></td>
                     </tr>
                     <tr class="table_check">
                       <th></th>
@@ -69,7 +69,7 @@
                     </tr>
                     <tr class="table_tr">
                       <th>*パスワード</th>
-                      <td><input type="password" name="data" id="data_input[1]"  value="" required /></td>
+                      <td><input type="password" name="data" id="data_input[1]"  value="aaaaaaaa" required /></td>
                     </tr>
                     <tr class="table_check">
                       <th></th>
@@ -78,7 +78,7 @@
                     </tr>
                     <tr class="table_tr">
                       <th>*パスワード(再入力)</th>
-                      <td><input type="password" name="data" id="data_input[2]"  value="" required /></td>
+                      <td><input type="password" name="data" id="data_input[2]"  value="aaaaaaaa" required /></td>
                     </tr>
                     <tr class="table_check">
                       <th></th>
@@ -87,20 +87,21 @@
                   </table>
 				  <p id="emptyAlert2" class="hide" style="color: red;"></p>
 
-
-                  <div class="secretClass hide" id="secretQuestionArea">
-                    <div class="container">
+          <div class="container hide" id="container">
+                  <div class="secretClass form-group hide" id="secretQuestionArea">
+                    <div class="custom-select form-control">
 						<select name="example" id="secret" class="select">
               <option hidden selected >ここからえらんでね</option>
 							<option id="secret_question[0]">Qあなたのニックネームは？</option>
 							<option id="secret_question[1]">Q好きなキャラクターは？</option>
 							<option id="secret_question[2]">Q好きな食べ物は？</option>
 							<option id="secret_question[3]">Q思い出の場所は？</option>
-							<option id="secret_question[4]">Q思い出の場所は？</option>
+							<option id="secret_question[4]">Q好きなどうぶつは？</option>
 						</select>
           </div>
+        </div>
 
-						<input type="text" name="" value="" id="secret secretInput" class=" text required" 
+						<input type="text" name="" value="" id="secret secretInput" class="text required" 
             data-maxlength="30" required style="margin-top: 120px;" />
 						<p id="emptyAlert4"  class="hide" style="color: red;"></p>
 						<!-- <input id="secret_question[0] type="radio" name="num_of_inq" value="はじめて">Q好きな動物は？

@@ -18,6 +18,8 @@ const emptyAlert2 = document.getElementById('emptyAlert2')
 const emptyAlert4 = document.getElementById('.emptyAlert4')
 const secretSelected = document.querySelectorAll('#secret')//aaaaaaaaaaaaa
 const secretInput = document.getElementById('secretInput')
+const container = document.getElementById('container')
+
 
 
 let counter = 0
@@ -70,6 +72,7 @@ back.addEventListener('click', function () {
           secretAns.classList.add('hide')
       }
       if (counter == 2) {
+        container.classList.add('hide')
           check.classList.remove('hide')
           table.classList.add('hide')
           registerButton.classList.add('hide')
@@ -184,6 +187,7 @@ function clickNextButton(event){
     }
 
     if (counter == 3) {
+        container.classList.remove('hide')
         description.classList.remove('hide')
         text.classList.add('hide')
         check.classList.add('hide')
@@ -265,3 +269,81 @@ function lastQuestionButton(){
 
 // //登録ボタン押す
 // end.addEventListener('click', register)
+
+document.addEventListener('DOMContentLoaded', () => {
+    CustomSelect.init();
+  });
+  
+  /**
+   * カスタムセレクトボックス
+   * @constructor
+   * @param {HTMLElement} カスタムセレクトボックス
+   * @property {HTMLElement} custom カスタムセレクトボックス
+   * @property {HTMLElement} select もとのセレクトボックス
+   * @property {NodeList} options もとのセレクトボックスの選択肢
+   */
+  function CustomSelect(elem) {
+    this.custom = elem;
+    this.select = this.custom.querySelector('select');
+    this.options = this.select.querySelectorAll('option');
+    
+    this.create();
+  }
+  
+  /**
+   * カスタムセレクトボックスを生成する
+   */
+  CustomSelect.prototype.create = function() {
+    // 選択中のアイテムのテキスト
+    const selectedText = document.createElement('span');
+    selectedText.className = 'custom-select-text';
+    this.custom.appendChild(selectedText);
+  
+    // カスタム選択肢
+    const customOptions = this.createOptions();
+    this.custom.appendChild(customOptions);
+  
+    // クリックイベントで、開いた見た目を表現するためのクラスを付け替える
+    this.custom.addEventListener('click', () => {
+      this.custom.classList.toggle('open');
+    });
+  };
+  
+  /**
+   * カスタムセレクトボックスの選択肢部分を生成する
+   */
+  CustomSelect.prototype.createOptions = function() {
+    // 親要素
+    const customOptions = document.createElement('span');
+    customOptions.className = 'custom-select-list';
+  
+    // もとの選択肢ごとにループして、カスタム選択肢の要素を生成する
+    this.options.forEach(option => {
+      const customOption = document.createElement('span');
+  
+      const optionText = document.createTextNode(option.innerText);
+      customOption.appendChild(optionText);
+      customOption.className = 'custom-select-item';
+      customOption.setAttribute('data-option-value', option.value);
+  
+      // クリックしたら、もとのセレクトボックスの値を変更し、
+      // カスタムセレクトボックスの表示テキストも変更する
+      customOption.addEventListener('click', () => {
+        this.select.value = option.value;
+        const selectedText = this.custom.querySelector('.custom-select-text');
+        selectedText.innerText = option.innerText;
+      });
+  
+      customOptions.appendChild(customOption);
+    });
+    
+    return customOptions;
+  };
+  
+  /**
+   * 初期化
+   */
+  CustomSelect.init = function() {
+    const customSelects = document.querySelectorAll('.custom-select');
+    customSelects.forEach(elem => new CustomSelect(elem));
+  };
