@@ -3,6 +3,7 @@ WEBフォントで「ふい字(HuiFontP109)」 ver130717
 http://customtemplate.blog112.fc2.com/blog-entry-143.html
 */
 
+
 @font-face{
     font-family:'HuiFontP109';
     src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot%27);
@@ -15,52 +16,52 @@ http://customtemplate.blog112.fc2.com/blog-entry-143.html
 }
 
 
+
 body {
-	-webkit-text-size-adjust: 100%;
-	/* background-color: #824900; */
+  -webkit-text-size-adjust: 100%;
 }
 
 .kakoi {
-	box-shadow: 0px 0px 10px 10px rgba(221, 247, 197, 0.5);
+  box-shadow: 0px 0px 10px 10px rgba(221, 247, 197, 0.5);
 
-	border-radius: 50px;
-	box-shadow: 0px 0px 10px 10px rgba(221, 247, 197, 0.5);
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 10px rgba(221, 247, 197, 0.5);
 
-	border-radius: 50px;
-	/* height: 89vh; */
-	text-align: center;
-	/* background-color: aqua; */
-	width: auto;
-	height: 100%;
-	/* min-height: 89vh; */
-	margin: 5%;
-	/* margin-top: 6%; */
-	padding: 5%;
+  border-radius: 50px;
+  /* height: 89vh; */
+  text-align: center;
+  /* background-color: aqua; */
+  width: auto;
+  height: 100%;
+  /* min-height: 89vh; */
+  margin: 5%;
+  /* margin-top: 6%; */
+  padding: 5%;
 }
 
 .questionnaire-midasi {
-	text-align: center;
-	font-size: 70px;
-	padding: 3% 0;
-	margin: 5% 0;
-	/* background-color: aquamarine; */
+  text-align: center;
+  font-size: 70px;
+  padding: 3% 0;
+  margin: 5% 0;
+  /* background-color: aquamarine; */
 }
 
 .catbox {
-	padding-left: 10%;
-	/* background-color: bisque; */
-	/* padding-bottom: -300px; */
+  padding-left: 10%;
+  /* background-color: bisque; */
+  /* padding-bottom: -300px; */
 }
 
 img.cat {
-	text-align: center;
+  text-align: center;
 }
 
 .hukidasi {
-	margin-left: 5%;
-	width: 50%;
-	position: relative;
-	/* background-color: blue; */
+  margin-left: 5%;
+  width: 50%;
+  position: relative;
+  /* background-color: blue; */
 }
 
 /* .question{
@@ -70,185 +71,185 @@ img.cat {
 } */
 
 .questionnaire-right-yajirusi {
-	text-align: right;
-	/* background-color: red; */
+  text-align: right;
+  /* background-color: red; */
 }
 
 .arrow {
-	padding: 3% 0;
-	margin: 3% 0;
-	font-size: 70px;
+  padding: 3% 0;
+  margin: 3% 0;
+  font-size: 70px;
 }
 
 svg {
-	width: 70px;
-	height: 70px;
-	fill: #824900;
+  width: 70px;
+  height: 70px;
+  fill: #824900;
 }
 
 button {
-	background: transparent;
-	border: 2px solid transparent;
+  background: transparent;
+  border: 2px solid transparent;
 }
 
 .questionnaire-left-yajirusi {
-	text-align: left;
-	/* background-color: darkblue; */
+  text-align: left;
+  /* background-color: darkblue; */
 }
 
 .updown {
-	animation-name: updown1;
-	/* アニメーション名の指定 */
-	animation-delay: 0s;
-	/* アニメーションの開始時間指定 */
-	animation-duration: 3s;
-	/* アニメーション動作時間の指定 */
-	animation-timing-function: ease-in-out;
-	/* アニメーションの動き指定（徐々に早く）*/
-	animation-iteration-count: infinite;
+  animation-name: updown1;
+  /* アニメーション名の指定 */
+  animation-delay: 0s;
+  /* アニメーションの開始時間指定 */
+  animation-duration: 3s;
+  /* アニメーション動作時間の指定 */
+  animation-timing-function: ease-in-out;
+  /* アニメーションの動き指定（徐々に早く）*/
+  animation-iteration-count: infinite;
 }
 
 @keyframes updown1 {
-	0% {
-		transform: translateY(0);
-	}
+  0% {
+    transform: translateY(0);
+  }
 
-	50% {
-		transform: translateY(-20px);
-	}
+  50% {
+    transform: translateY(-20px);
+  }
 
-	100% {
-		transform: translateY(0);
-	}
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .cattable {
-	margin: 0 auto;
-	/* background-color: darkgoldenrod; */
+  margin: 0 auto;
+  /* background-color: darkgoldenrod; */
 }
 
 .box {
-	/* padding-top: 20%;
+  /* padding-top: 20%;
     padding-bottom: 20%; */
-	display: flex;
-	padding: 20% 0;
-	margin: 10% 0;
-	/* background-color: black; */
+  display: flex;
+  padding: 20% 0;
+  margin: 10% 0;
+  /* background-color: black; */
 }
 
 .hukidasi2 {
-	height: 300px;
-	width: auto;
-	/* background-color: chocolate; */
+  height: 300px;
+  width: auto;
+  /* background-color: chocolate; */
 }
 
 .cat {
-	height: 350px;
-	/* background-color: lightcoral; */
+  height: 350px;
+  /* background-color: lightcoral; */
 }
 
 .bar {
-	/* background-color: khaki; */
-	/* padding: 20px; */
-	position: relative;
-	padding: 4% 0;
-	margin: 7% 0;
-	width: 100%;
+  /* background-color: khaki; */
+  /* padding: 20px; */
+  position: relative;
+  padding: 4% 0;
+  margin: 7% 0;
+  width: 100%;
 }
 
 .input_bar {
-	/* background-color: aqua; */
-	z-index: 100;
+  /* background-color: aqua; */
+  z-index: 100;
 }
 
 .bar_flex {
-	display: flex;
-	justify-content: space-between;
-	/* background-color: green; */
-	/* margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: green; */
+  /* margin: auto;
     width: 99%; */
 }
 
 .bar p {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 .v_line_fix {
-	width: 10px;
-	height: 70px;
-	background-color: #824900;
-	margin-top: -40px;
-	z-index: -100;
+  width: 10px;
+  height: 70px;
+  background-color: #824900;
+  margin-top: -40px;
+  z-index: -100;
 }
 
 .kazu {
-	/* background-color: blueviolet; */
-	padding: 2% 0;
-	margin: 3% 0;
+  /* background-color: blueviolet; */
+  padding: 2% 0;
+  margin: 3% 0;
 }
 
 
 /*bar*/
 .bar input[type="range"] {
-	-webkit-appearance: none;
-	/* 🚩これ無しだとスタイルがほぼ全く反映されないので注意 */
-	appearance: none;
-	cursor: pointer;
-	/* カーソルを分かりやすく */
-	outline: none;
-	/* スライダーのアウトラインは見た目がキツイので消す */
-	height: 3px;
-	/* バーの高さ */
-	width: 100%;
-	/* バーの幅 */
-	background: #824900;
-	/* バーの背景色 */
-	border-radius: 10px;
-	/* バーの両端の丸み */
-	border: solid 3px #824900;
-	/* バー周囲の線 */
+  -webkit-appearance: none;
+  /* 🚩これ無しだとスタイルがほぼ全く反映されないので注意 */
+  appearance: none;
+  cursor: pointer;
+  /* カーソルを分かりやすく */
+  outline: none;
+  /* スライダーのアウトラインは見た目がキツイので消す */
+  height: 3px;
+  /* バーの高さ */
+  width: 100%;
+  /* バーの幅 */
+  background: #824900;
+  /* バーの背景色 */
+  border-radius: 10px;
+  /* バーの両端の丸み */
+  border: solid 3px #824900;
+  /* バー周囲の線 */
 }
 
 /* WebKit向けのつまみ */
 .bar input[type="range"]::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	/*  🚩デフォルトのつまみのスタイルを解除 */
-	background: #cef0c2;
-	/* 背景色 */
-	width: 50px;
-	/* 幅 */
-	height: 50px;
-	/* 高さ */
-	border-radius: 50%;
-	/* 円形に */
-	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
-	/* 影 */
+  -webkit-appearance: none;
+  /*  🚩デフォルトのつまみのスタイルを解除 */
+  background: #cef0c2;
+  /* 背景色 */
+  width: 50px;
+  /* 幅 */
+  height: 50px;
+  /* 高さ */
+  border-radius: 50%;
+  /* 円形に */
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+  /* 影 */
 }
 
 /* Moz向けのつまみ */
 .bar input[type="range"]::-moz-range-thumb {
-	background: #cef0c2;
-	/* 背景色 */
-	width: 50px;
-	/* 幅 */
-	height: 50px;
-	/* 高さ */
-	border-radius: 50%;
-	/* 円形に */
-	box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
-	/* 影 */
-	border: none;
-	/* デフォルトの線を消す */
+  background: #cef0c2;
+  /* 背景色 */
+  width: 50px;
+  /* 幅 */
+  height: 50px;
+  /* 高さ */
+  border-radius: 50%;
+  /* 円形に */
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+  /* 影 */
+  border: none;
+  /* デフォルトの線を消す */
 }
 
 /* Firefoxで点線が周りに表示されてしまう問題の解消 */
 .bar input[type="range"]::-moz-focus-outer {
-	border: 0;
+  border: 0;
 }
 
 /* つまみをドラッグしているときのスタイル */
 .bar input[type="range"]:active::-webkit-slider-thumb {
-	box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);
 }
 
 /* @media (max-width: 480px) {
@@ -268,222 +269,211 @@ button {
 
 /* 吹き出し */
 .mycomment {
-	margin: 10px 0;
-	width: 100%;
-	height: 100%;
-	display: table;
+  margin: 10px 0;
+  width: 100%;
+  height: 100%;
+  display: table;
 }
 
 /* 吹き出し */
 .mycomment p {
-	display: inline-block;
-	position: relative;
-	margin: 0 10px 0 0;
-	padding: 8px;
-	width: 95%;
-	height: 90%;
-	border-radius: 20px;
-	background: #cef0c2;
-	font-size: 30px;
-	text-align: center;
-	/* 中央ぞろえ */
-	display: table-cell;
-	vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 0 0;
+  padding: 8px;
+  width: 95%;
+  height: 90%;
+  border-radius: 20px;
+  background: #cef0c2;
+  font-size: 30px;
+  text-align: center;
+  /* 中央ぞろえ */
+  display: table-cell;
+  vertical-align: middle;
 
 }
 
 /* 吹き出しの△のとこ */
 .mycomment p:after {
-	content: "";
-	position: absolute;
-	bottom: 4%;
-	/* right: -19px; */
-	right: -40px;
-	border: 15px solid transparent;
-	border-left: 35px solid #cef0c2;
-	-webkit-transform: rotate(-15deg);
-	transform: rotate(-13deg);
+  content: "";
+  position: absolute;
+  bottom: 4%;
+  /* right: -19px; */
+  right: -40px;
+  border: 15px solid transparent;
+  border-left: 35px solid #cef0c2;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-13deg);
 }
 
 
 a.btn--red.btn--cubic {
-	border-bottom: 5px solid #9c9c9c7e;
-	background-color: #EEF8CD;
-	border-radius: 50px;
-	width: 300px;
-	margin: 0 auto;
+  border-bottom: 5px solid #9c9c9c7e;
+  background-color: #EEF8CD;
+  border-radius: 50px;
+  width: 300px;
+  margin: 0 auto;
 }
 
 a.btn--red.btn--cubic:hover {
-	margin-top: 3px;
-	background-color: #EEF8CD;
-	border-bottom: 2px solid #9c9c9c7e;
-	border-radius: 60px;
+  margin-top: 3px;
+  background-color: #EEF8CD;
+  border-bottom: 2px solid #9c9c9c7e;
+  border-radius: 60px;
 }
 
 a.btn--radius {
-	border-radius: 100vh;
+  border-radius: 100vh;
 }
 
 .fa-position-right {
-	position: absolute;
-	top: calc(50% - .5em);
-	right: 1rem;
+  position: absolute;
+  top: calc(50% - .5em);
+  right: 1rem;
 }
 
 *,
 *:before,
 *:after {
-	-webkit-box-sizing: inherit;
-	box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 .btn,
 a.btn,
 button.btn {
-	font-size: 1.6rem;
-	font-weight: 700;
-	line-height: 1.5;
-	position: relative;
-	padding: 1rem 4rem;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	text-align: center;
-	vertical-align: middle;
-	text-decoration: none;
-	letter-spacing: 0.1em;
-	color: #212529;
-	border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
 }
 
 
 nav {
 
-	width: 100%;
-	height: 150px;
-	background-color: #DDFFD1;
-	padding-top: 5px;
-	box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  background-color: #DDFFD1;
+  padding-top: 5px;
+  box-sizing: border-box;
 
 }
 
 ul {
-	margin-top: -50px;
-	display: flex;
-	justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 li {
-	margin-top: -50px;
-	list-style: none;
+  list-style: none;
 
 }
 
 a {
-	display: block;
-	text-decoration: none;
-	color: white;
-	/* margin-right: 35px; */
+  display: block;
+  text-decoration: none;
+  color: white;
+  /* margin-right: 35px; */
 }
 
 nav img {
-	height: 100px;
+  height: 100px;
 }
 
 .top-catbox {
-	text-align: center;
-	position: absolute;
-	margin-left: 5%;
-	margin-top: -100px;
+  text-align: center;
+  position: absolute;
+  margin-left: 20%;
 
 }
 
 .top-cat {
-	height: 700px;
-	margin-top: 20%;
-	padding: 0 auto;
-	margin-left: 20%;
-}
-
-.result_top-cat {
-	height: 700px;
-	margin-top: 20%;
-	margin-left: 20%;
-	padding: 0 auto;
+  height: 700px;
+  margin-top: 20%;
+  /* margin-left: 5%;  */
+  padding: 0 auto;
 
 }
+
 
 .pyon {
-	animation: pyon 3s infinite;
+  animation: pyon 3s infinite;
 }
 
 @keyframes pyon {
-	0% {
-		transform: translate(0px, 5px);
-	}
+  0% {
+    transform: translate(0px, 5px);
+  }
 
-	5% {
-		transform: translate(0px, -5px);
-	}
+  5% {
+    transform: translate(0px, -5px);
+  }
 
-	10% {
-		transform: translate(0px, 5px);
-	}
+  10% {
+    transform: translate(0px, 5px);
+  }
 
-	15% {
-		transform: translate(0px, -5px);
-	}
+  15% {
+    transform: translate(0px, -5px);
+  }
 
-	20% {
-		transform: translate(0px, 5px);
-	}
+  20% {
+    transform: translate(0px, 5px);
+  }
 
-	25% {
-		transform: translate(0px, -5px);
-	}
+  25% {
+    transform: translate(0px, -5px);
+  }
 
-	30% {
-		transform: translate(0px, 0px);
-	}
+  30% {
+    transform: translate(0px, 0px);
+  }
 }
 
 .heart {
-	margin: 0 auto;
-	padding-top: 30%;
-	position: absolute;
+  margin: 0 auto;
+  padding-top: 30%;
+  position: absolute;
 }
 
 .heart img {
-	height: 300px;
-	padding-left: 60%;
+  height: 300px;
+  padding-left: 60%;
 }
 
 .top-kakoi {
-	/* box-shadow: 0px 0px 30px 30px rgba(221, 247, 197, 0.5); */
-	height: 80vh;
-	margin: 5%;
-	padding: 5%;
-	text-align: center;
+  /* box-shadow: 0px 0px 30px 30px rgba(221, 247, 197, 0.5); */
+  height: 80vh;
+  margin: 5%;
+  padding: 5%;
+  text-align: center;
 }
 
 .questionnaire-midasi {
-	text-align: center;
-	font-size: 70px;
+  text-align: center;
+  font-size: 70px;
 }
 
 .hide {
-	display: none;
+  display: none;
 }
-
-
