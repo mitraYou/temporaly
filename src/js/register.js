@@ -97,7 +97,6 @@ end.addEventListener('click', function () {
     let data = {
 		"animalname": input_arr[0],
         "userid":data_input_arr[0],
-        //確認のためのパスワード二回目のやつDBに送る？
 		"password": data_input_arr[1],
         "username": input_arr[2],
 		"animal": animal
