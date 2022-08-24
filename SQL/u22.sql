@@ -12,10 +12,33 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 
+
 -- u22 のデータベース構造をダンプしています
 DROP DATABASE IF EXISTS `u22`;
 CREATE DATABASE IF NOT EXISTS `u22` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 USE `u22`;
+
+
+
+--  テーブル u22.users の構造をダンプしています
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE IF NOT EXISTS `users` (
+  `id` int(4) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `theme` char(6) NOT NULL DEFAULT '1a1a1a',
+  `genders_id` int(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+
+-- テーブル u22.users: ~1 rows (約) のデータをダンプしています
+DELETE FROM `users`;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` (`id`, `username`, `password`, `email`, `theme`, `genders_id`) VALUES
+	(1, 'test_user', '12345', NULL, '1a1a1a', 0);
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+
 
 --  テーブル u22.questions の構造をダンプしています
 DROP TABLE IF EXISTS `questions`;
@@ -54,24 +77,6 @@ DELETE FROM `statuses`;
 /*!40000 ALTER TABLE `statuses` DISABLE KEYS */;
 /*!40000 ALTER TABLE `statuses` ENABLE KEYS */;
 
---  テーブル u22.users の構造をダンプしています
-DROP TABLE IF EXISTS `users`;
-CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(4) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `theme` char(6) NOT NULL DEFAULT '1a1a1a',
-  `genders_id` int(1) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
-
--- テーブル u22.users: ~1 rows (約) のデータをダンプしています
-DELETE FROM `users`;
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` (`id`, `username`, `password`, `email`, `theme`, `genders_id`) VALUES
-	(1, 'test_user', '12345', NULL, '1a1a1a', 0);
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 --  テーブル u22.users_answers_questions の構造をダンプしています
 DROP TABLE IF EXISTS `users_answers_questions`;
