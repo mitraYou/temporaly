@@ -1,0 +1,86 @@
+@font-face{
+    font-family:'HuiFontP109';
+    src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot');
+    src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot?#iefix') format('embedded-opentype'),
+    url('https://dl.dropboxusercontent.com/s/7pscemjdvt0wyiq/HuiFontP109.woff') format('woff'),
+    url('https://dl.dropboxusercontent.com/s/0w9uuopxrns8ehi/HuiFontP109.ttf') format('truetype'),
+    url('https://dl.dropboxusercontent.com/s/xnnsbxtz8o6d98i/HuiFontP109.svg#HuiFontP109') format('svg');
+    }
+    body,input,textarea{font-family:'HuiFontP109';font-size:16px;}
+
+
+
+#date{
+    margin-top: 25px;
+    text-align:center;
+    font-size: 13px;
+}
+
+.you_chat_box{
+    margin: 15px 0px 15px 10px;
+}
+
+.my_chat_box{
+    margin: 15px 10px 15px auto;
+    /* text-align: right; */
+}
+
+.chat_box{
+    max-width: 200px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(235, 240, 148);
+}
+
+.time_box{
+    font-size: 13px;
+    vertical-align: bottom;
+}
+
+.name{
+    font-size: 13px;
+    text-align:center;
+}
+
+.icon_box{
+    text-align:center;
+    vertical-align: top;
+}
+.icon{
+    width: 50px;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+
+.msg-form {
+    background-color: #cef0c2;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+#js-local-text {
+    width: 78vw;
+    height: 5vh;
+    border-radius: 20px;
+    border: #fff;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    font-size: 32px;
+}
+#js-local-text:focus {
+    outline: 2px solid #cef0c2;
+}
+
+
+.material-icons.icon-small-size {
+    font-size: 45px;
+    color: #824900;
+    padding-top: 6px;
+    padding-left: 10px;
+}
