@@ -17,9 +17,11 @@ require("login_check.php");
 <body>
     <nav>
         <div class='logo'>
-            <img src='images/logo.png' alt=''>
+            <img src='images/logo.png' alt='' class="logo_img">
         </div>
         <ul>
+			<li><a href="#"><img src="images/hukidasi.png" class="settei_icon"></a></li>
+            <li><a href="#"><img src="images/calendar.png" class="settei_icon"></a></li>
             <li><a href='#'><img src='images/icon.png' class='settei_icon'></a></li>
             <li><a href='#'><img src='images/gear1-removebg-preview.png' class='settei_icon'></a></li>
         </ul>
