@@ -2,6 +2,7 @@
 WEBフォントで「ふい字(HuiFontP109)」 ver130717
 http://customtemplate.blog112.fc2.com/blog-entry-143.html
 */
+
 @font-face{
     font-family:'HuiFontP109';
     src:url('https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot');
@@ -13,53 +14,9 @@ http://customtemplate.blog112.fc2.com/blog-entry-143.html
     body,input,textarea{font-family:'HuiFontP109';font-size:16px;}
 
 
-
 body {
     -webkit-text-size-adjust: 100%;
     }
-/* フォームのリセット */
-input,
-button,
-select,
-textarea {
-    /* -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; */
-    background: transparent;
-    border: none;
-    border-radius: 0;
-    font: inherit;
-    outline: none;
-}
-    
-textarea {
-    resize: vertical;
-}
-    
-input[type='checkbox'],
-input[type='radio'] {
-    display: none;
-}
-    
-input[type='submit'],
-input[type='button'],
-label,
-button,
-select {
-    cursor: pointer;
- }
-    
-select::-ms-expand {
-    display: none;
-}
-
-
-.body{
-    height: 100vh;
-
-    /* background-color: goldenrod; */
-    padding: 5% 0;
-}
 
 .kakoi{
     box-shadow: 0px 0px 10px 10px rgba(221, 247, 197, 0.5);
@@ -68,18 +25,19 @@ select::-ms-expand {
     box-shadow: 0px 0px 10px 10px rgba(221, 247, 197, 0.5);
 
     border-radius: 50px;
-    height: 94vh;
+    /* height: 89vh; */
     text-align: center;
     /* background-color: aqua; */
     width:auto;
-    /* height: 94%; */
+    height: 100%;
     /* min-height: 89vh; */
-    margin: 0 5%;
+    margin:  5% ;
     padding: 5%;
 }
 .questionnaire-midasi{
     text-align: center;
     font-size: 70px;
+    padding-bottom: 30px;
     /* background-color: aquamarine; */
 }
 .catbox{
@@ -90,8 +48,12 @@ select::-ms-expand {
 
 .iconbox{
     padding-left: 5%;
+    padding-right: 18%;
     /* background-color: bisque; */
     /* padding-bottom: -300px; */
+}
+img.iconbox{
+    width: 30%;
 }
 
 img.cat{
@@ -116,13 +78,14 @@ img.cat{
 .arrow{
     padding: 2% 0;
     margin: 5% 0;
+    font-size: 70px;
 }
 svg{
-    width:20%;
-    height:100%;
+    width: 70px;
+    height: 70px;
     fill:#824900;
 }
-#buckButton button{
+button{
     background: transparent;
     border: 2px solid transparent;
 }
@@ -168,7 +131,7 @@ svg{
 
 .consultation_box{
     display: flex;
-    padding: 4% 0;
+    padding: 4% 0 0 10%;
 }
 .hukidasi2{
     height: 300px;
@@ -251,10 +214,6 @@ svg{
   /* つまみをドラッグしているときのスタイル */
 .bar input[type="range"]:active::-webkit-slider-thumb {
     box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);
-  }
-
-  .btn--red.btn--radius.btn--cubic{
-    font-size: 3.6rem;
   }
 
 
@@ -389,31 +348,30 @@ img.cat{
     padding-left: -10px;
 }
 
-.nav {
+nav {
     
     width: 100%;
     height: 150px;
     background-color: #DDFFD1;
     padding-top: 5px;
     box-sizing: border-box;
-    top: 0;
 
   }
-.nav ul {
+  ul {
     display: flex;
     justify-content: end;
   }
- li {
+  li {
     list-style: none;
 
   }
- a {
+  a {
     display: block;
     text-decoration: none;
     /* margin-right: 35px; */
   }
 
-.nav img{
+nav img{
     height: 100px;
 }
 
@@ -425,10 +383,9 @@ img.cat{
 }
 .top-cat{
     height:700px;
-    /* margin-top: 20%; */
+    margin-top: 20%;
     /* margin-left: 5%;  */
     padding: 0 auto;
-    /* background-color: #70a6ff; */
 
 }
 
@@ -579,13 +536,145 @@ img.cat{
 }
 
 
+.soudanh1{
+    font-size: 40px;
+    color: #824900;
+    /* padding: 4%; */
+    margin:4% 0;
+}
+
+.namaep{
+    font-size: 40px;
+    color: #824900;
+    padding: 5%;
+}
+
+
+.my_nickname{
+    font-size: 40px;
+    text-align: left;
+    color: #824900;
+}
+.partner_nickname{
+    font-size: 40px;
+    text-align: left;
+    color: #824900;
+}
+.minyuuryoku{
+    text-align: right;
+    color: #824900;
+}
+
+.textbox{
+    width: 90%;
+    min-height: 40px;
+    color: #824900;
+    border: solid 1px;
+    margin: 3%;
+    border: none;
+    /* border-radius: 10px; */
+    border-bottom: 3px solid #824900;
+}
+.textbox2{
+    width: 70%;
+    min-height: 40px;
+    color: #824900;
+    border: solid 1px;
+    margin: 3%;
+    border-radius: 10px;
+    border: none;
+}
+
+.mypage_kakoi{
+    padding-top: 5%;
+    border:solid 1px #824900;
+    border-radius: 50px;
+
+}
+.userID_hennkou{
+    font-size: 40px;
+    text-align: left;
+    color: #824900;
+}
+
+
+.flex_content-box {
+    display: flex;
+    width:100%;
+    margin: 0 auto;
+    /* margin-left:7% ; */
+    /* margin-top: 1%;
+    margin-bottom: 7%; */
+
+
+} 
+.flex_content-item2 {
+    margin:0  auto;
+    width: auto;
+}
+
+.flex_content-item2:nth-child(1) {
+    width: 80%;
+}
+
+.flex_content-item2:nth-child(2) {
+    width: 100%;
+}
+
+.flex_content-item2:nth-child(3) {
+    width: 100%;
+}
+
+.flex_content-box {
+    display: flex;              /* フレックスボックスにする */
+}
+.hennkou1{
+    text-align: right;
+    font-size: 40px;
+    color: #824900;
+}
+.hennkou2{
+    text-align: right;
+    font-size: 40px;
+    color: #824900;
+}
+
+.minyuuryoku2{
+    text-align: right;
+    color: #824900;
+    padding-right: 5%;
+}
+
+.mypage_hr{
+    border:solid 1px #824900;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.himitunositumonn{
+    text-align: left;
+    font-size: 40px;
+    padding-left: 40px;
+
+}
+.withdrawal{
+    padding-top: 30px;
+    text-align: right;
+    font-size: 20px;
+    padding-right: 5%;
+}
+
+.pen{
+    width: 20%;
+}
+
 
 a.btn--red.btn--cubic {
     border-bottom: 5px solid #9c9c9c7e;
-    background-color:#EEF8CD;
+    background-color: #EEF8CD;
     border-radius: 50px;
-    padding: 0 50px;
-    margin-bottom: 30px;
+    width: 300px;
+    margin: 0 auto;
   }
   
   a.btn--red.btn--cubic:hover {
@@ -604,385 +693,44 @@ a.btn--red.btn--cubic {
     top: calc(50% - .5em);
     right: 1rem;
   }
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-.btn,
-a.btn,
-pointerbutton.btn {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.5;
-  position: relative;
-  display: inline-block;
-  padding: 1rem 4rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  color: #212529;
-  border-radius: 0.5rem;
-}
-
-.soudanh1{
-    font-size: 40px;
-    color: #824900;
-    /* padding: 4%; */
-    margin:4% 0;
-}
-
-.namaep{
-    font-size: 40px;
-    color: #824900;
-    padding: 5%;
-}
-
-/* 登録ページ */
-.input{
-    display: flex;
-    align-items: flex-start;
-    flex-flow: column;
-    justify-content:space-between;
-    height: 100%;
-    /* background-color: darkgreen; */
-}
-.input_flex{
-    width: 100%;
-    height: 100%;
-    /* background-color: darkblue; */
-    /* margin-top: 5%; */
-    padding: 7%;
-}
-.input_flex img{
-    height: 100%;
-    /* background-color: firebrick; */
-}
-
-.input_hukidasi{
-    width: 100%;
-   height: 100%;
-}
-
-/* input吹き出し */
-.input_comment {
-    margin: 10px 0;
-    width: 100%;
-    height: 100%;
-    display: table;
-  }
-  /* 吹き出し */
-.input_data {
-    display: inline-block;
-    position: relative;
-    margin: 0 10px 0 0;
-    padding: 8px;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    background: #cef0c2;
-    font-size: 30px;
-    text-align: center;
-    /* 中央ぞろえ */
-
-  }
-  /* 吹き出しの△のとこ */
-.input_data:after {
-    content: "";
-    position: absolute;
-    bottom: 4%; 
-    /* right: -19px; */
-    top: -27px;
-    left:9%;
-    border: 15px solid transparent;
-    border-right: 100px solid #cef0c2;
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-    z-index: -1;
-  }
-
-.check_input_Button{
-    bottom: 5%;
-    right: 5%;
-    /* background-color: salmon; */
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    /* background-color: darkblue; */
-}
-.back_input_Button{
-    top: 5%;
-    left: 5%;
-    /* background-color: salmon; */
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    /* background-color: darkblue; */
-}
-.input_data button{
-    width: 100%;
-    height: 100%;
-}
-.input_data svg{
-    width: 100%;
-    height: 100%;
-}
-
-.input_data input{
-    border-bottom: 2px solid #824900;
-    text-align: center;
-    /* background-color: darkcyan; */
-    width: 90%;
-}
-
-.kakuninn{
-    
-    margin: 10% 5% 5% 5%;
-}
-.table{
-    width: 100%;
-    color: #824900;
-    /* background-color: darkgray; */
-}
-.table tr{
-    height: 10px;
-}
-/* #question td{
-    padding:  7% 0;
-} */
-/* .input_data form{
-    margin: 0 3% 5% 3%;
-} */
-.form_check{
-    font-size: 24px;
-    color: #824900;
-    text-align: left;
-    margin-left: 3%;
-    bottom: 0;
-    margin-top: 5%;
-    /* background-color: salmon; */
-}
-.table_check{
-    /* background-color: darkgreen; */
-    top: 0;
-    height: auto;
-    line-height:0;
-    width: 10%;
-}
-.table_check td{
-    text-align: right;
-    font-size: 16px;
-    /* background-color: darkgreen; */
-    /* line-height: 30px; */
-
-}
-.table_tr th{
-    width: 40%;
-    /* background-color: #000; */
-    letter-spacing: 3px;
-    font-size: 32px;
-    padding: 4% 0;
-}
-.table_tr td{
-    /* background-color: darkcyan; */
-    text-align: right;
-}
-/* .input_question{
-    background-color: darkmagenta;
-    
-} */
-.input_question p{
-    text-align: right;
-    font-size: 16px;
-}
-.data h2{
-    font-size: 46px;
-    /* background-color: darkcyan; */
-    /* margin-top: 20%; */
-    color: #824900;
-}
-.data p{
-    font-size: 16px;
-    color: #824900;
-    text-align: right;
-    padding-right: 5%;
-}
-.data{
-    /* background-color: darkmagenta; */
-    margin: 20% 5%;
-}
-.text{
-    height: 100px;
-    margin-top: 30%;
-}
-.input_kazu{
-    font-size: 16px;
-    color: #824900;
-    margin: 0;
-    padding: 0;
-}
-.choose{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* background-color: darkgreen; */
-    height: 65%;
-    width: 100%;
-}
-.choose img{
-    height: 100%;
-    width: auto;
-}
-.choose_items{
-    /* background-color: sandybrown; */
-    width: 50%;
-    height: auto;
-    padding: 5%;
-}
-.choose_kakoi{
-    height: 100%;
-    padding: 3%;
-    /* background-color: darkgray; */
-}
-.choose_title h1{
-    font-size: 46px;
-    color: #824900;
-    margin: 5% auto;
-    letter-spacing: 10px;
-    /* background-color: darkgoldenrod;
-     */
-}
-.choose_btn h2{
-    font-size: 32px;
-    text-align: center;
-   /* background-color: darkcyan; */
-   margin: 15% 0;
-   letter-spacing: 5px;
-}
-/* .kakuninn1{
-    background-color: darkkhaki;
-} */
-a.choose_btn {
-    border-bottom: 5px solid #9c9c9c7e;
-    background-color:#EEF8CD;
-    border-radius: 50px;
-    padding: 0 50px;
-    height: 5%;
-    color: #824900;
-
-  }
-a.choose_btn:hover {
-    margin-top: 3px;
-    background-color: #EEF8CD;
-    border-bottom: 2px solid #9c9c9c7e;
-    border-radius: 60px;
-  }
-.choose_title{
-    padding:3%;
-    margin-top: 3%;
-    /* background-color: firebrick; */
-}
-.example3{
-     /* background-color: #003396; */
-     margin: 5% 0;
-}
-
-.example3 li {
-    display: inline-block;
-    height:20px;line-height:20px;
-    width:20px;text-align:center;
-    border:1px #ccc solid;color:#000053;
-    border-radius: 100%;
-    margin: 0 20px;
-    background-color: #824900;
-    }
-    
-    .example3 .this {background-color:#e2b476;;color:#fff;}
-    .example3 li a{display:block;text-decoration: none;}
-    
-.example3 a{
-    cursor: pointer;
-}
-
-/*========= ぼかしのためのCSS ===============*/
-
-.mainblur{
-	filter: blur(8px);
-}
-
-.active{
-    filter: blur(0);
-}
-
-/* 要素隠す */
-.hide {
-    display: none;
-}
-.touroku{
-    /* background-color: darkgrey; */
-    margin-top: -20%;
-}
-.register_btn h2{
-    margin: 5% 0;
-}
-.register_btn {
-    margin-top: 10%;
-}
-
-/* リザルトの感情 */
-.kakuninn3{
-    background-color: #000053;
-}
-.emotion {
-    position: relative;
-    display: inline-block;
-    left: 30%;
-    /* margin: 1.5em 0; */
-    padding: 0 5px;
-    width: 200px;
-    height: 200px;
-    line-height: 200px;
-    text-align: center;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: bold;
-    background: #cef0c2;
-    border-radius: 50%;
-    box-sizing: border-box;
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
   }
   
-  .emotion:before {
-    content: "";
-    position: absolute;
-    bottom: -50px;
-    left: 7%;
-    /* margin-left: 0px; */
-    border: 30px solid transparent;
-    border-top: 50px solid #cef0c2;
-    transform: rotate(40deg);
-    z-index: 0;
+  html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
   }
-.emotion img{
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    right: 10%;
-    top: 10%;
+  
+  .btn,
+  a.btn,
+  button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+  }
+
+.mypage_button{
+    font-size: 40px;
+    color: #824900;
 }
