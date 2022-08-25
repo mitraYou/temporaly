@@ -835,13 +835,14 @@ a.choose_btn:hover {
 }
 
 .form-control {
-  background: #fff;
-  border: 1px solid #dedede;
+  background: #cef0c2;
+  border-bottom: 2px solid #824900;
   border-radius: 4px;
-  height: calc(1.5rem + 1rem + 2px);
+  height: calc(4rem + 1rem + 2px);
   line-height: 1.5;
   padding: 0.5rem 0.75rem;
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .form-control:focus {
@@ -860,6 +861,7 @@ a.choose_btn:hover {
 
 .custom-select {
   position: relative;
+  content: "kaka";
 }
 
 .custom-select.open {
@@ -886,7 +888,7 @@ a.choose_btn:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   display: none;
   left: 0;
-  opacity: 0;
+  /* opacity: 0; */
   position: absolute;
   width: 100%;
 }
@@ -907,7 +909,7 @@ a.choose_btn:hover {
 }
 
 .custom-select-item:hover {
-  background-color: #00bbf0;
+  background-color: #cef0c2;
   color: #fff;
 }
 
