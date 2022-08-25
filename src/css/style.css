@@ -408,9 +408,10 @@ nav img {
 }
 
 .top-cat {
+
   height: 700px;
-  margin-top: 20%;
-  /* margin-left: 5%;  */
+  margin-top: 0%;
+  margin-left: -10%;
   padding: 0 auto;
 
 }
