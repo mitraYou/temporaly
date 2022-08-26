@@ -15,9 +15,9 @@
 </head>
 
 <body>
-  <div class="body login">
+  <div class="body">
     <?php include('./components/header.php'); ?>
-    <div class="kakoi">
+    <div class="top-kakoi">
       <div class="input">
         <!-- ユーザーごとに画像変える(仮の猫) -->
         <div class="input_flex2">
