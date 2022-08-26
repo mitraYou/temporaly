@@ -15,18 +15,8 @@ require("login_check.php");
 </head>
 
 <body>
-    <nav>
-        <div class='logo'>
-            <img src='images/logo.png' alt='' class="logo_img">
-        </div>
-        <ul>
-			<li><a href="#"><img src="images/hukidasi.png" class="settei_icon"></a></li>
-            <li><a href="#"><img src="images/calendar.png" class="settei_icon"></a></li>
-            <li><a href='#'><img src='images/icon.png' class='settei_icon'></a></li>
-            <li><a href='#'><img src='images/gear1-removebg-preview.png' class='settei_icon'></a></li>
-        </ul>
-
-    </nav>
+	<?php include('./components/header.php'); ?>
+		
     <div class='top-kakoi'>
         <h1 class='questionnaire-midasi'>来てくれて<br>ありがとう</h1>
         <div class='box'>
