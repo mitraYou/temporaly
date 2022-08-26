@@ -65,7 +65,7 @@
                 <p class="hennkou2">パスワード変更：</p>
             </div>
             <div class="flex_content-item2">
-              <input type="password" id="" name="" class="textbox2"><img src="images/1657259724177.jpg" class="pen">
+              <input type="password" id="" name="" class="textbox2"><img src="images/pencil.png" class="pen">
             </div>
           </div>
           <hr class="mypage_hr">
@@ -75,7 +75,7 @@
                 <p class="hennkou2">Q.好きな動物は？：</p>
             </div>
             <div class="flex_content-item2">
-              <input type="text" id="" name="" class="textbox2"><img src="images/1657259724177.jpg" class="pen">
+              <input type="text" id="" name="" class="textbox2"><img src="images/pencil.png" class="pen">
             </div>
           </div>
           <hr class="mypage_hr">
