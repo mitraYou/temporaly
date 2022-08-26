@@ -1,5 +1,3 @@
-<?php # $_SESSION['user_id'] = 1 ?>
-
 <nav>
 	<div class='logo'>
 		<img src='images/logo.png' alt='' class="logo_img">
@@ -13,7 +11,7 @@
 		</ul>
 	<?php else: ?>
 		<ul>
-			<li><a href=""><img src="images/icon.png" class="settei_icon"></a></li>
+			<li><a href="login.php"><img src="images/icon.png" class="settei_icon"></a></li>
 		</ul>
 	<?php endif; ?>
 </nav>
