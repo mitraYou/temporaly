@@ -33,9 +33,7 @@
                 </div> -->
         <!-- </div> -->
         <h1 class="questionnaire-midasi" id="result"></h1>
-        <a href="consultation.php" class="btn btn--red btn--radius btn--cubic">
-            <h1>相談する？</h1><i class="fas fa-angle-right fa-position-right"></i>
-        </a>
+		<?php include('./components/consultationBtn.php'); ?>
     </div>
     <script src="js/result.js"></script>
 </body>
