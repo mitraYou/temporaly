@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link  href="css/reset.css" rel="stylesheet">
+	<link href='css/style.css' rel='stylesheet' type='text/css'>
     <link href="css/mypage.css" rel="stylesheet" type="text/css">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no”>
@@ -12,13 +13,7 @@
 </head>
 <body>
   <div class="body">
-    <nav>
-      <ul>
-        <li><a href="#"><img src="images/icon.png" class="settei_icon"></a></li>
-        <!-- <li><a href="#"><img src="images/gear1-removebg-preview.png" class="settei_icon"></a></li>
-        <li><a href="#"><img src="images/gear1-removebg-preview.png" class="settei_icon"></a></li> -->
-      </ul>
-    </nav>
+  <?php include('./components/header.php'); ?>
       <div class="kakoi">
         <h1 class="questionnaire-midasi">マイページ</h1>
         <!-- <div class="mypage_kakoi"> -->
@@ -88,7 +83,13 @@
             </div>
           </div>
           <hr class="mypage_hr">
-          <p class="withdrawal">退会する</p>
+		  
+		  <div class="flex_content-item">
+              <div id="js-show-popup">
+				  <p class="withdrawal">退会する</p>
+                <!-- <img src="images/phone.png" class="flex_content-img"> -->
+              </div>  
+            </div>
         </form>
           
           
@@ -111,12 +112,17 @@
       <div class="popup-inner">
           <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
           <section class="box_item">
-  
-              <div class="image_wrapper"><img src="images/icon.png"  alt="" /></div>
-              <p class="namaep">nekotarou</p>
-              <a href="" class="btn btn--red btn--radius btn--cubic"> <h1 class = "soudanh1">電話する</h1><i class="fas fa-angle-right fa-position-right"></i></a>
+              <!-- <div class="image_wrapper"><img src="images/icon.png"  alt="" /></div> -->
+              <p class="namaep">本当に退会しますか？</p>
+			  <div class="withdrawalBtnWrap">
+				  <a href="withdraw.php" class="btn btn--radius withdrawalBtn">
+					<h1 class = "soudanh1">はい</h1><i class="fas fa-angle-right fa-position-right"></i>
+				  </a>
+				  <a href="#" class="btn btn--radius withdrawalBtn">
+					<h1 class = "soudanh1">いいえ</h1><i class="fas fa-angle-right fa-position-right"></i>
+				  </a>
+			  </div>
           </section>
-          
       </div>
       <div class="black-background" id="js-black-bg"></div>
   </div>
