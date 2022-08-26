@@ -9,12 +9,13 @@
   <link href="css/consultation.css" rel="stylesheet" type="text/css">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta name=”viewport” content=”width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no”>
+  <!-- <link href='css/style.css' rel='stylesheet' type='text/css'> -->
 
   <title>Document</title>
 </head>
 
 <body>
-  <div class="body">
+  <div class="body login">
     <?php include('./components/header.php'); ?>
     <div class="kakoi">
       <div class="input">
