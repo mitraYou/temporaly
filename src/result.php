@@ -12,11 +12,7 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <ul>
-            <li><a href="#"><img src="images/icon.png" class="settei_icon"></a></li>
-        </ul>
-    </nav>
+	<?php include('./components/header.php'); ?>
     <div class="top-kakoi">
         <h1 class="questionnaire-midasi">今のキモチ</h1>
         <!-- 感情の吹き出し -->
@@ -37,7 +33,7 @@
                 </div> -->
         <!-- </div> -->
         <h1 class="questionnaire-midasi" id="result"></h1>
-        <a href="consultation.html" class="btn btn--red btn--radius btn--cubic">
+        <a href="consultation.php" class="btn btn--red btn--radius btn--cubic">
             <h1>相談する？</h1><i class="fas fa-angle-right fa-position-right"></i>
         </a>
     </div>

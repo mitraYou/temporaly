@@ -12,12 +12,7 @@
 </head>
 <body>
   <div class="body">
-    <nav class="nav">
-      <ul>
-        <li><a href="#"><img src="images/icon.png" class="settei_icon"></a></li>
-        <!-- <li><a href="#"><img src="images/gear1-removebg-preview.png" class="settei_icon"></a></li>
-        <li><a href="#"><img src="images/gear1-removebg-preview.png" class="settei_icon"></a></li> -->
-      </ul>
+	<?php include('./components/header.php'); ?>
     </nav>
       <div class="kakoi">
           <h1 class="questionnaire-midasi">相談者を探す</h1>

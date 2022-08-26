@@ -1,3 +1,12 @@
 {
-	"cSpell.words": ["Monday", "Tueseday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+	"cSpell.words": [
+		"Monday",
+		"Tueseday",
+		"Wednesday",
+		"Thursday",
+		"Friday",
+		"Saturday",
+		"Sunday"
+	],
+	"liveServer.settings.port": 5501,
 }
