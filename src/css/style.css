@@ -312,6 +312,7 @@ a.btn--red.btn--cubic {
   border-radius: 50px;
   width: 300px;
   margin: 0 auto;
+  font-size: 4rem;
 }
 
 a.btn--red.btn--cubic:hover {
