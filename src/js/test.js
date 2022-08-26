@@ -11,10 +11,18 @@ var bar = document.getElementById("value")
 var backButton = document.getElementById("backButton")
 var checkButton = document.getElementById("checkButton")
 var decisionButton = document.getElementById("decisionButton")
+const backBtnWrap = document.getElementById("backButton")
 var counter = 0
 
 
 var api_url = 'http://localhost/Github/U22/temporaly/src/'
+
+
+if(counter === 0){
+	backBtnWrap.classList.add("hide");
+}
+console.log(counter)
+
 
 //質問の結果をINSERTする為にset_choiceにpostする
 decisionButton.addEventListener("click", function () {
@@ -44,11 +52,29 @@ fetch(api_url+'get_questions.php', {
     Question.innerHTML = array[0][1]
   })
 
+
+
+
 //nextクリック
 checkButton.addEventListener("click", function () {
+  if(counter === 1){
+	console.log(counter)
+	backBtnWrap.classList.remove("hide");
+  }
+  if(counter === 2){
+	console.log(counter)
+	backBtnWrap.classList.remove("hide");
+  }
   if (counter == 3) {
+	console.log(counter)
     checkButton.classList.add("hide")
     decisionButton.classList.remove("hide")
+	backBtnWrap.classList.remove("hide");
+  }
+  if (counter == 4) {
+	console.log(counter)
+   	backBtnWrap.classList.remove("hide");
+
   }
   choice[counter] = bar.value
   counter++
