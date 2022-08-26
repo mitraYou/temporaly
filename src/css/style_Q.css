@@ -752,6 +752,7 @@ a.choose_btn:hover {
   margin: 0;
   padding: 0;
 }
+
 .secretClass{
   color: #824900;
   -moz-appearance: menulist;
@@ -766,56 +767,6 @@ a.choose_btn:hover {
   font-size: 16px;
   left: 0;
 }
-/* select{
-  color: #824900;
-  text-align: center;
-  background-color: #000053;
-  width: 100%;
-  background: rgba(255,255,255,0.5);
-}
-.container {
-  font-size: 24px;
-    color: #824900;
-    position: relative;
-    text-align: center;
-    background-color: #e2b476;
-    width: 50%;
-    margin: 0 auto;
-    border-bottom: 2px solid #824900;
-}
-.container::after {
-  pointer-events: none;
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 15px;
-    height: 15px;
-    border-top: 3px solid #824900;
-    border-left: 3px solid #824900;
-    transform: translateY(70%) rotate(
--135deg);
-} */
-/* .container::before {
-  border-bottom: 4.5px solid red;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  content: "";
-  position: absolute;
-  right: 9px;
-  top: 10px;
-  width: 0;
-}
-.container::after {
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 4.5px solid red;
-  content: "";
-  position: absolute;
-  right: 9px;
-  top: 21px;
-  width: 0;
-} */
 
 * {
   box-sizing: border-box;
@@ -861,7 +812,6 @@ a.choose_btn:hover {
 
 .custom-select {
   position: relative;
-  content: "kaka";
 }
 
 .custom-select.open {
@@ -883,12 +833,13 @@ a.choose_btn:hover {
 }
 
 .custom-select-list {
-  border: 1px solid #dedede;
+  border: 1px solid #824900;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   display: none;
   left: 0;
-  /* opacity: 0; */
+  opacity: 1;
+  background-color: #cef0c2;
   position: absolute;
   width: 100%;
 }
@@ -909,7 +860,7 @@ a.choose_btn:hover {
 }
 
 .custom-select-item:hover {
-  background-color: #cef0c2;
+  background-color: #824900;
   color: #fff;
 }
 
@@ -924,7 +875,7 @@ a.choose_btn:hover {
 }
 
 .custom-select-item + .custom-select-item {
-  border-top: 1px solid #dedede;
+  border-top: 1px solid #824900;
 }
 
 @keyframes fadeIn {
@@ -936,4 +887,15 @@ a.choose_btn:hover {
     opacity: 1;
     top: calc(2.5rem + 2px + 4px);
   }
+}
+
+.touroku{
+  /* background-color: darkgrey; */
+  margin-top: -20%;
+}
+.register_btn h2{
+  margin: 5% 0;
+}
+.register_btn {
+  margin-top: 10%;
 }
