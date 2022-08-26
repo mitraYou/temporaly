@@ -53,7 +53,7 @@
                   <!-- 二番目 -->
                   <table class="table " id="table">
                     <tr class="form_check">
-                      <th>*必ず入力してね</th>
+                      <!-- <th>*必ず入力してね</th> -->
                       <td></td>
                     </tr>
                     <tr class="table_tr">
@@ -76,9 +76,12 @@
                     </tr>
                   </table>
                 </div>
+				<div class="registerBtn">
+					<a href="registration.php">新規登録</a>
+				</div>
                 <div class="touroku login" id="end">
                   <a href="" class="btn btn--radius choose_btn register_btn">
-                    <h2>とうろく！</h2>
+                    <h2>ログイン</h2>
                   </a>
                 </div>
               </div>

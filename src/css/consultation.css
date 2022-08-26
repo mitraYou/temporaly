@@ -130,7 +130,7 @@ pointerbutton.btn {
 /* 囲いとそのぼかし */
 .body{
     height: 100vh;
-    padding: 5% 0;
+    /* padding: 5% 0; */
 }
 .kakoi {
     box-shadow: 0px 0px 10px 10px rgba(221, 247, 197, 0.5);
@@ -1111,7 +1111,7 @@ a.choose_btn:hover {
     top: 10%;
 }
 .login{
-    margin-bottom: 3%;
+    margin-bottom: 10%;
 }
 
 nav {
@@ -1150,4 +1150,11 @@ nav img {
 	margin-top: 30px;
   }
   
-  
+  .registerBtn{
+	margin-right: 13px;
+	text-align: right;
+  }
+  .registerBtn a{
+	font-size: 29px;
+	color: #824900;
+  }
