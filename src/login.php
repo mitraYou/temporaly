@@ -15,6 +15,7 @@
 
 <body>
   <div class="body">
+    <?php include('./components/header.php'); ?>
     <div class="kakoi">
       <div class="input">
         <!-- ユーザーごとに画像変える(仮の猫) -->
@@ -45,22 +46,19 @@
 
 
                 <div class="data">
-                  <!-- 最初と最後 -->
-                  <h2 id="description"></h2>
-                  <!-- <form action="input_data.html"> -->
-                  <input type="text" name="" id="input_text" value="aaaaaa" class="text" required data-maxlength="10"/>
-				  <p id="emptyAlert1" class="hide" style="color: red;"></p>
+  
 
 
                   <!-- 二番目 -->
-                  <table class="table hide" id="table">
+                  <table class="table " id="table">
                     <tr class="form_check">
                       <th>*必ず入力してね</th>
                       <td></td>
                     </tr>
                     <tr class="table_tr">
-                      <th>*ユーザーid</th>
-                      <td><input type="text" name="data" id="data_input[0]"  value="aaaaaa" data-maxlength="10" required /></td>
+                      <th>*ユーザーid <br>メールアドレス
+                      </th>
+                      <td><input type="text" name="data" id="data_input[0]"  value="" data-maxlength="10" required /></td>
                     </tr>
                     <tr class="table_check">
                       <th></th>
@@ -69,67 +67,19 @@
                     </tr>
                     <tr class="table_tr">
                       <th>*パスワード</th>
-                      <td><input type="password" name="data" id="data_input[1]"  value="aaaaaaaa" required /></td>
-                    </tr>
-                    <tr class="table_check">
-                      <th></th>
-                      <td>入力してね</td>
-
-                    </tr>
-                    <tr class="table_tr">
-                      <th>*パスワード(再入力)</th>
-                      <td><input type="password" name="data" id="data_input[2]"  value="aaaaaaaa" required /></td>
+                      <td><input type="password" name="data" id="data_input[1]"  value="" required /></td>
                     </tr>
                     <tr class="table_check">
                       <th></th>
                       <td>入力してね</td>
                     </tr>
                   </table>
-				  <p id="emptyAlert2" class="hide" style="color: red;"></p>
-
-          <div class="container hide" id="container">
-                  <div class="secretClass form-group hide" id="secretQuestionArea">
-                    <div class="custom-select form-control">
-						<select name="example" id="secret" class="select">
-              <option hidden selected >ここからえらんでね</option>
-							<option id="secret_question[0]">Qあなたのニックネームは？</option>
-							<option id="secret_question[1]">Q好きなキャラクターは？</option>
-							<option id="secret_question[2]">Q好きな食べ物は？</option>
-							<option id="secret_question[3]">Q思い出の場所は？</option>
-							<option id="secret_question[4]">Q好きなどうぶつは？</option>
-						</select>
-          </div>
-        </div>
-
-						<input type="text" name="" value="" id="secret secretInput" class="text required" 
-            data-maxlength="30" required style="margin-top: 120px;" />
-						<p id="emptyAlert4"  class="hide" style="color: red;"></p>
-						<!-- <input id="secret_question[0] type="radio" name="num_of_inq" value="はじめて">Q好きな動物は？
-						<input id="secret_question[1] type="radio" name="num_of_inq" value="２回目">Qあなたのニックネームは？
-						<input id="secret_question[2] type="radio" name="num_of_inq" value="３回以上">Q好きなキャラクターは？ -->
-                  </div>
-
                 </div>
-
-                <div id="check" class="check_input_Button">
-                  <!-- <button type="submit" id="checkButton"> -->
-                  <!-- <h1 class="questionnaire-right-yajirusi arrow updown"> -->
-                  <button type="submit">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                      <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                      <path
-                        d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z" />
-                    </svg>
-                  </button>
-                  <!-- </h1> -->
-                </div>
-                <!-- </form> -->
-                <div class="touroku hide" id="end">
+                <div class="touroku login" id="end">
                   <a href="" class="btn btn--radius choose_btn register_btn">
                     <h2>とうろく！</h2>
                   </a>
                 </div>
-
               </div>
 
               <!-- <input type=" submit" value=""> -->
@@ -138,9 +88,6 @@
 
 
             </div>
-
-            <!-- 現在地出したい -->
-            <div id="page" class="input_kazu">1/3</div>
 
           </div>
         </div>

@@ -13,7 +13,6 @@
 <body>
   <div class="body">
 	<?php include('./components/header.php'); ?>
-    </nav>
       <div class="kakoi">
           <h1 class="questionnaire-midasi">相談者を探す</h1>
           <h1 class="questionnaire-left-yajirusi arrow">
