@@ -186,21 +186,14 @@ img.cat{
     padding: 2% 0;
     margin: 5% 0;
 }
-svg{
-    width:20%;
-    height:100%;
-    fill:#824900;
-}
 #buckButton button{
     background: transparent;
     border: 2px solid transparent;
 }
-
 .questionnaire-left-yajirusi{
     text-align: left;
     /* background-color: darkblue; */
 }
-
 .updown {
     animation-name:updown1;   /* アニメーション名の指定 */
     animation-delay:0s;   /* アニメーションの開始時間指定 */
