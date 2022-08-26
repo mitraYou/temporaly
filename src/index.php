@@ -15,7 +15,7 @@ require("login_check.php");
 </head>
 
 <body>
-	<?php include('./components/header.php'); ?>
+	<?php include('./includes/header.php'); ?>
 		
     <div class='top-kakoi'>
         <h1 class='questionnaire-midasi'>来てくれて<br>ありがとう</h1>

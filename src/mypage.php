@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="body">
-  <?php include('./components/header.php'); ?>
+  <?php include('./includes/header.php'); ?>
       <div class="kakoi">
         <h1 class="questionnaire-midasi">マイページ</h1>
         <!-- <div class="mypage_kakoi"> -->

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<?php include('./components/header.php'); ?>
+	<?php include('./includes/header.php'); ?>
     <div class="top-kakoi">
         <h1 class="questionnaire-midasi">今のキモチ</h1>
         <!-- 感情の吹き出し -->
@@ -33,7 +33,7 @@
                 </div> -->
         <!-- </div> -->
         <h1 class="questionnaire-midasi" id="result"></h1>
-		<?php include('./components/consultationBtn.php'); ?>
+		<?php include('./includes/consultationBtn.php'); ?>
     </div>
     <script src="js/result.js"></script>
 </body>

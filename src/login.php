@@ -16,7 +16,7 @@
 
 <body>
   <div class="body">
-    <?php include('./components/header.php'); ?>
+    <?php include('./includes/header.php'); ?>
     <div class="top-kakoi">
       <div class="input">
         <!-- ユーザーごとに画像変える(仮の猫) -->

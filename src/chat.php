@@ -12,7 +12,7 @@
 </head>
 <body>
 	
-	<?php include('./components/header.php'); ?>
+	<?php include('./includes/header.php'); ?>
 		
 
     <p id="date">日付</p>

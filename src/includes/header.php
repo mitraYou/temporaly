@@ -11,7 +11,7 @@
 		</ul>
 	<?php else: ?>
 		<ul>
-			<li><a href="login.php"><img src="images/icon.png" class="settei_icon"></a></li>
+			<li><a href="../login.php"><img src="images/icon.png" class="settei_icon"></a></li>
 		</ul>
 	<?php endif; ?>
 </nav>
