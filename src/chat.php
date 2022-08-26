@@ -11,6 +11,9 @@
     <title>chat</title>
 </head>
 <body>
+	
+	<?php include('./components/header.php'); ?>
+		
 
     <p id="date">日付</p>
     <table class="you_chat_box">
